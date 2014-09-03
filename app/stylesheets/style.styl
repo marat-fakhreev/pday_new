@@ -1,0 +1,68 @@
+$blueColor = #073f5a
+$blueLightColor = #329ccf
+$greyColor = #878787
+$greyFontColor = #3b3b3b
+
+html
+  margin: 0px auto
+  padding: 0px
+
+body
+  width: 100%
+  heigth: auto
+  background-color: #fff
+  font-family: 'PT Sans Narrow', sans-serif
+  overflow: auto
+
+  &.fixed
+    overflow: hidden
+
+  ul
+  li
+    list-style-type: none
+
+  a
+    cursor: pointer
+    color: inherit
+    text-decoration: none
+
+.block
+  width: 100%
+  position: relative
+  overflow: hidden
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+
+  &.blue-block
+    color: #fff
+
+  &.white-block
+    color: #073f5a
+
+  .block-color
+    width: 100%
+    height: 100%
+    background-color: rgba(#319bce, 0.9)
+
+  .block-inner
+    width: 960px
+    height: 100%
+    margin: 0 auto
+    box-sizing: border-box
+    padding: 105px 0 80px 0
+    position: relative
+    z-index: 50
+
+    &::after
+      height: 0
+      content: ''
+      display: block
+      clear: both
+
+  .box
+    width: 100%
+    height: 550px
+    box-sizing: border-box
+    border: 4px solid #fff
+    padding: 70px 100px 0 100px

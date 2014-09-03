@@ -1,0 +1,240 @@
+#screen-seven
+  height: auto
+
+  p
+    font-size: 18px
+
+  h4
+    font-size: 36px
+    font-weight: 400
+
+  .org-column
+    position: relative
+    margin: 100px 0
+    text-align: center
+
+    &::after
+      height: 0
+      content: ''
+      display: block
+      clear: both
+
+    > li
+      float: left
+      width: 420px
+      margin 0 30px
+
+      &:nth-child(1)
+        .photo-circle
+          background-image: url('../images/persons/1.jpg')
+
+      &:nth-child(2)
+        .photo-circle
+          background-image: url('../images/persons/2.jpg')
+
+      .photo-circle
+        width: 240px
+        height: 240px
+        border-radius: 50%
+        background-color: #333
+        text-align: center
+        position: relative
+        left: 50%
+        margin: 0 0 20px -120px
+        background-position: center 0px
+        background-size: cover
+
+      .social
+        position: relative
+        left: 50%
+        margin-left: -45px
+
+  .org-list
+  .partners-list
+    margin: 0 0 50px 0
+
+    li
+      padding: 80px 0 80px 0
+      width: 100%
+      border-bottom: 1px solid $greyColor
+
+      &::after
+        content: ''
+        display: block
+        clear: both
+
+      &:last-child
+        border-bottom: none
+        padding: 80px 0 0 0
+
+      &:nth-child(1)
+        .circle
+          background-image: url('../images/presenters/a_sokolov.jpg')
+        .logo
+          background-image: url('../images/logos/1.jpg')
+
+      &:nth-child(2)
+        .circle
+          background-image: url('../images/presenters/a_shmiganovskaya.jpg')
+        .logo
+          background-image: url('../images/logos/2.jpg')
+
+      &:nth-child(3)
+        .circle
+          background-image: url('../images/presenters/a_muzika.jpg')
+        .logo
+          background-image: url('../images/logos/3.jpg')
+
+      &:nth-child(4)
+        .circle
+          background-image: url('../images/presenters/d_kolosov.jpg')
+        .logo
+          background-image: url('../images/logos/4.jpg')
+
+      &:nth-child(5)
+        .circle
+          background-image: url('../images/presenters/a_artishev.jpg')
+        .logo
+          background-image: url('../images/logos/5.jpg')
+
+      &:nth-child(6)
+        .circle
+          background-image: url('../images/presenters/g_aprishkina.jpg')
+        .logo
+          background-image: url('../images/logos/6.jpg')
+
+      &:nth-child(7)
+        .circle
+          background-image: url('../images/presenters/a_egorov.jpg')
+        .logo
+          background-image: url('../images/logos/7.jpg')
+
+      &:nth-child(8)
+        .circle
+          background-image: url('../images/presenters/d_kipkalo.jpg')
+        .logo
+          background-image: url('../images/logos/8.png')
+
+      &:nth-child(9)
+        .circle
+          background-image: url('../images/presenters/p_doronin.jpg')
+        .logo
+          background-image: url('../images/logos/9.png')
+
+      &:nth-child(10)
+        .circle
+          background-image: url('../images/presenters/a_malcev.jpg')
+        .logo
+          background-image: url('../images/logos/10.jpg')
+
+      &:nth-child(11)
+        .circle
+          background-image: url('../images/presenters/a_orlov.jpg')
+        .logo
+          background-image: url('../images/logos/11.png')
+
+      &:nth-child(12)
+        .circle
+          background-image: url('../images/presenters/n_fedotki.jpg')
+        .logo
+          background-image: url('../images/logos/12.jpg')
+
+      &:nth-child(13)
+        .circle
+          background-image: url('../images/presenters/g_gnutov.jpg')
+        .logo
+          background-image: url('../images/logos/13.png')
+
+      &:nth-child(14)
+        .circle
+          background-image: url('../images/presenters/g_sevenov.jpg')
+        .logo
+          background-image: url('../images/logos/14.jpg')
+
+      &:nth-child(15)
+        .circle
+          background-image: url('../images/presenters/g_karapetyan.jpg')
+        .logo
+          background-image: url('../images/logos/15.jpg')
+
+      .circle-block
+        width: 240px
+        float: left
+
+        .circle
+          width: 207px
+          height: 207px
+          border-radius: 50%
+          background-color: #333
+          text-align: center
+          position: relative
+          left: 50%
+          margin: 0 0 20px -120px
+          background-position: center 0px
+          background-size: cover
+
+          p
+            position: absolute
+            top: 50px
+            font-size: 13px
+            width: 100%
+            text-align: center
+            color: #888
+
+        .logo
+          width: auto
+          height: 60px
+          max-width: 207px
+          background-position: center 0px
+          background-repeat: no-repeat
+          background-size: contain
+
+      .name
+        display: block
+        text-transform: uppercase
+        text-decoration: none
+        font-size: 43px
+        cursor: default
+
+        &:hover
+          text-decoration: none
+
+      a
+        font-size: 15px
+        text-decoration: underline
+
+        &:hover
+          text-decoration: none
+
+      p
+        padding: 15px 0
+
+      .text-block
+        padding: 10px 0 0 0
+        margin: 0 0 0 267px
+        width: 693px
+
+  .partners-list
+    li
+      .circle-block
+        .circle
+          border-radius: 0
+          background-position: center 0px
+          background-repeat: no-repeat
+          background-size: contain
+          background-color: transparent
+          background-image: none
+          width: 207px
+          height: 144px
+
+          img
+            width: auto
+            height: auto
+            max-width: 207px
+            max-height: 144px
+
+        span
+          display: block
+          font-size: 18px
+          text-align: center
+          width: 207px

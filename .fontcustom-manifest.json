@@ -1,0 +1,146 @@
+{
+  "checksum": {
+    "previous": "8f041e9037857c833315d5eb34482a8d961b3481e9b27b3e382f8e120ca5103e",
+    "current": "8f041e9037857c833315d5eb34482a8d961b3481e9b27b3e382f8e120ca5103e"
+  },
+  "fonts": [
+    "app/fonts/fontcustom.ttf",
+    "app/fonts/fontcustom.svg",
+    "app/fonts/fontcustom.woff",
+    "app/fonts/fontcustom.eot"
+  ],
+  "glyphs": {
+    "PUlogo": {
+      "codepoint": 61696,
+      "source": "app/svgs/PUlogo.svg"
+    },
+    "PUlogob": {
+      "codepoint": 61697,
+      "source": "app/svgs/PUlogob.svg"
+    },
+    "clock": {
+      "codepoint": 61698,
+      "source": "app/svgs/clock.svg"
+    },
+    "clock-in": {
+      "codepoint": 61699,
+      "source": "app/svgs/clock-in.svg"
+    },
+    "fb": {
+      "codepoint": 61700,
+      "source": "app/svgs/fb.svg"
+    },
+    "icon-1": {
+      "codepoint": 61701,
+      "source": "app/svgs/icon-1.svg"
+    },
+    "icon-2": {
+      "codepoint": 61702,
+      "source": "app/svgs/icon-2.svg"
+    },
+    "icon-3": {
+      "codepoint": 61703,
+      "source": "app/svgs/icon-3.svg"
+    },
+    "icon-4": {
+      "codepoint": 61704,
+      "source": "app/svgs/icon-4.svg"
+    },
+    "icon-5": {
+      "codepoint": 61705,
+      "source": "app/svgs/icon-5.svg"
+    },
+    "icon-6": {
+      "codepoint": 61706,
+      "source": "app/svgs/icon-6.svg"
+    },
+    "icon-7": {
+      "codepoint": 61707,
+      "source": "app/svgs/icon-7.svg"
+    },
+    "icon-8": {
+      "codepoint": 61708,
+      "source": "app/svgs/icon-8.svg"
+    },
+    "icon-9": {
+      "codepoint": 61709,
+      "source": "app/svgs/icon-9.svg"
+    },
+    "icon-circle": {
+      "codepoint": 61710,
+      "source": "app/svgs/icon-circle.svg"
+    },
+    "insta": {
+      "codepoint": 61711,
+      "source": "app/svgs/insta.svg"
+    },
+    "logo-1": {
+      "codepoint": 61712,
+      "source": "app/svgs/logo-1.svg"
+    },
+    "logo-2": {
+      "codepoint": 61713,
+      "source": "app/svgs/logo-2.svg"
+    },
+    "minus": {
+      "codepoint": 61714,
+      "source": "app/svgs/minus.svg"
+    },
+    "person": {
+      "codepoint": 61715,
+      "source": "app/svgs/person.svg"
+    },
+    "pin": {
+      "codepoint": 61716,
+      "source": "app/svgs/pin.svg"
+    },
+    "plus": {
+      "codepoint": 61717,
+      "source": "app/svgs/plus.svg"
+    },
+    "quote-bottom": {
+      "codepoint": 61718,
+      "source": "app/svgs/quote-bottom.svg"
+    },
+    "quote-top": {
+      "codepoint": 61719,
+      "source": "app/svgs/quote-top.svg"
+    },
+    "scroll": {
+      "codepoint": 61720,
+      "source": "app/svgs/scroll.svg"
+    },
+    "vk": {
+      "codepoint": 61721,
+      "source": "app/svgs/vk.svg"
+    }
+  },
+  "options": {
+    "autowidth": true,
+    "config": "app/fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": true,
+    "font_name": "fontcustom",
+    "force": true,
+    "input": {
+      "templates": "app/svgs",
+      "vectors": "app/svgs"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "app/stylesheets",
+      "fonts": "app/fonts",
+      "preview": "app"
+    },
+    "preprocessor_path": "",
+    "quiet": true,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "app/stylesheets/fontcustom.css",
+    "app/fontcustom-preview.html"
+  ]
+}

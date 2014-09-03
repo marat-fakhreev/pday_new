@@ -1,0 +1,37 @@
+#screen-three
+  height: 1100px
+  background-image: url("../images/bg_two.jpg")
+
+  h2
+    text-align: center
+
+  ul
+    margin: 80px 0 0 0
+
+    li
+      width: 430px
+      float: left
+      min-height: 130px
+
+      &:nth-child(odd)
+        margin: 0 50px 40px 0
+        text-align: right
+
+      &:nth-child(even)
+        margin: 0 0 40px 50px
+
+      &:nth-child(5)
+      &:nth-child(6)
+        height: 160px
+
+      span
+        display: block
+        font-size: 36px
+        color: $blueColor
+        margin 0 0 4px 0
+
+  .slogan
+    clear: both
+    padding: 0 280px
+    display: block
+    text-align: center

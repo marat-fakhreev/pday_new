@@ -1,0 +1,55 @@
+#screen-seventeen
+  .devices
+    width: 100%
+    height: 325px
+    margin: 80px 0 50px 0
+    background-size: cover
+    background-image: url("../images/devices.jpg")
+
+  .devices-title
+    text-align: center
+
+  .partners
+    margin: 30px 0 0 0
+    padding: 0 286px
+
+    &::after
+      content: ''
+      display: block
+      clear: both
+
+    .partner-logo
+      padding: 0 12px
+
+    .logo-1
+      @extend #screen-one .header .logo
+      top: -40px
+
+      .logo-part-one
+        color: $blueLightColor
+
+      .logo-part-two
+        bottom: 0px
+        right: 35px
+
+    .logo-2
+      position: relative
+      width: 170px
+      height: 100%
+      float: left
+      @extend #screen-one .payu
+
+      .payu-part-one
+        color: $blueColor
+        font-size: 30px
+
+      .payu-part-two
+        color: $blueLightColor
+        font-size: 30px
+        left: 103px
+
+      span
+        font-size: 18px
+        color $blueColor
+        position: relative
+        top: 5px

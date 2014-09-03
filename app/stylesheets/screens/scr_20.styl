@@ -1,0 +1,76 @@
+#screen-twenty
+  h2
+    text-align: center
+    text-transform: none
+    font-size: 46px
+    line-height: 1.4
+
+  .message
+    @extend #screen-thirteen .reviews ul li .review-item
+    border-color: #fff
+    margin: 60px 0
+    padding: 45px
+    background-color: $blueLightColor
+
+    p
+      text-align: center
+
+    .icon-quote-top
+      color: $blueColor
+      @extend #screen-thirteen .reviews ul li .icon-quote-top
+
+    .icon-quote-bottom
+      color: $blueColor
+      @extend #screen-thirteen .reviews ul li .icon-quote-bottom
+
+  .social-comment-block
+    margin: 0
+
+    &::after
+      content: ''
+      display: block
+      clear: both
+
+    .vk
+    .fb
+      float: left
+      width: 400px
+      padding: 0
+      margin: 0px 40px
+      box-sizing: border-box
+      height: auto
+      overflow: hidden;
+
+    .fb-comments
+      background-color: #fff
+
+  .partners
+    margin: 50px 0 0 0
+    padding: 0 300px
+
+    &::after
+      content: ''
+      display: block
+      clear: both
+
+    .partner-logo
+      padding: 0 10px
+
+    .logo-1
+      @extend #screen-one .header .logo
+      float: none
+      left: 50%
+      margin: 0 0 0 -95px
+
+      .logo-part-one
+        color: #fff
+
+      .logo-part-two
+        bottom: 0
+        right: 35px
+
+    p
+      text-align: center
+      font-size: 14px
+      position: relative
+      top: -40px

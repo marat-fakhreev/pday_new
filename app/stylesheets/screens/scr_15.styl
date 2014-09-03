@@ -1,0 +1,104 @@
+#screen-fiveteen
+  .box
+    margin: 20px 0 20px 0
+    padding: 30px 240px
+    border-color: $blueLightColor
+    height: auto
+
+    .title
+      &::after
+        content: ''
+        display: block
+        clear: both
+
+    h2
+      float: left
+
+    span
+      float: left
+      position: relative
+      top: 35px
+      font-size: 24px
+      margin-right: 30px
+
+    .button
+      position: relative
+      top: 10px
+      height: 50px
+      width: 240px
+      line-height: 50px
+
+  p
+    &.center
+      margin: 20px 0 70px 0
+
+  ul.grid
+    margin: 15px 0 0 0
+
+    &::after
+      content: ''
+      display: block
+      clear: both
+
+    li
+      box-sizing: border-box
+      width: 50%
+      float: left
+      padding: 0 40px
+      margin: 0 0 40px 0
+      height: 55px
+
+      &:nth-child(1)
+        div
+          top: -40px
+      &:nth-child(2)
+        div
+          top: -40px
+      &:nth-child(3)
+        div
+          top: -40px
+      &:nth-child(4)
+        div
+          top: -20px
+      &:nth-child(5)
+        div
+          top: -20px
+      &:nth-child(6)
+        div
+          top: -80px
+          font-size: 80px
+
+      &:nth-child(1)
+      &:nth-child(2)
+      &:nth-child(4)
+      &:nth-child(5)
+        p
+          height: 100%
+          line-height: 55px
+
+      &:nth-child(4)
+      &:nth-child(5)
+        div
+          line-height: 85px
+
+      div
+        margin: 0 10px 0 0
+        height: 55px
+        width: 50px
+        text-align: center
+        line-height: 55px
+        float: left
+        font-size: 50px
+        color: $blueLightColor
+        position: relative
+
+  ul.list
+    margin: 0 0 0 20px
+
+    li
+      list-style-type: disc
+      list-style-position: inside
+      margin: 3px 0 0 0
+
+    p
+      display: inline

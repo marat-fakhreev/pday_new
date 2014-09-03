@@ -1,0 +1,46 @@
+#screen-nine
+  height: 520px
+  width: 100%
+
+  ul
+    margin: 50px 0 60px 0
+
+    &::after
+      height: 0
+      content: ''
+      display: block
+      clear: both
+
+    li
+      width: 20%
+      float: left
+
+      .partner
+        height: 80px
+        width: 100%
+        background-position: left bottom
+        background-repeat: no-repeat
+        margin-bottom: 4px
+
+      &:nth-child(1)
+        .partner
+          background-image: url("../images/partners/0.png")
+
+      &:nth-child(2)
+        .partner
+          background-image: url("../images/partners/1.png")
+
+      &:nth-child(3)
+        .partner
+          background-image: url("../images/partners/2.png")
+
+      &:nth-child(4)
+        .partner
+          background-image: url("../images/partners/3.png")
+
+      &:nth-child(5)
+        .partner
+          background-image: url("../images/partners/4.png")
+
+  .button-block
+    padding: 0 180px
