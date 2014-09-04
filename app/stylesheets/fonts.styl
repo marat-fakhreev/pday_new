@@ -1,37 +1,42 @@
-$font = 'PT Sans Narrow'
+$fontOne = 'Roboto Slab'
+$fontTwo = 'Roboto Condensed'
 
 h1
-  font-family: $font
+  font-family: $fontOne
   font-size: 63px
   font-weight: 700
   text-transform: uppercase
   letter-spacing: 4px
-  line-height: 69px
+  line-height: 59px
 
 h2
   @extend h1
-  font-weight: 400
+  font-size: 48px
+  font-weight: 300
+  text-transform: none
 
 h3
-  font-family: $font
+  font-family: $fontOne
   font-size: 30px
   font-weight: 400
   line-height: 1.2
 
 h4
-  font-size: 36px
+  font-family: $fontOne
+  font-size: 30px
   margin: 0 0 10px 0
 
 p
-  font-family: $font
+  font-family: $fontOne
   line-height: 1.2
-  font-size: 24px
+  font-size: 17px
 
   &.center
     text-align: center
 
 span
-  font-family: $font
+  font-family: $fontOne
+  font-weight: 300
 
 a
-  font-family: $font
+  font-family: $fontOne

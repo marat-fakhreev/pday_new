@@ -8,7 +8,11 @@ html
     meta(property="fb:admins", content="1695571811")
     meta(property="fb:app_id", content="{YOUR_APPLICATION_ID}")
     title Практика Days
-    | <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    //- fonts
+    //- | <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    | <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    | <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    //- styles
     | <link rel="stylesheet" href="/stylesheets/fontcustom.css">
     | <link rel="stylesheet" href="/stylesheets/style.css">
     //- libraries
@@ -64,7 +68,7 @@ html
           input(type="submit" value="Отправить заявку")
 
 
-    section#screen-one(class='block blue-block')
+    section#screen-one(class='block black-block')
       .block-color
         .svg-section
           svg(height="600" width="270")
@@ -93,12 +97,6 @@ html
                   a(href="/partners.html") Партнеры
                 li
                   a(class="about-button") О Нас
-            .likes-button
-              .vk-like
-                | <div id="vk_like"></div>
-                | <script type="text/javascript">VK.Widgets.Like("vk_like", {type: "mini"});</script>
-              .fb-like
-                | <div class="fb-like" data-href="https://praktikadays.ru" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
           .box
             h1
               | Главное практическое мероприятие по интернет-торговле
@@ -125,29 +123,30 @@ html
             .icon-scroll
 
 
-    section#screen-two(class='block white-block scroll-screen')
-      .svg-section
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-      .block-inner
-        h3
-          | В то время, как многие ходили по различным конференциям, слушали рассказы теоретиков и супер-звезд российского e-commerce, эти 15 предпринимателей работали над своими проектами. 
-
-
-    section#screen-three(class='block blue-block')
+    section#screen-two(class='block black-block scroll-screen')
       .block-color
         .svg-section
           svg(height="600" width="270")
             line(x1="270" y1="0" x2="0" y2="600")
           svg(height="600" width="270")
             line(x1="270" y1="0" x2="0" y2="600")
-          svg(height="600" width="270")
-            line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
-          h2
-            | От 15 практиков вы узнаете
+          h3
+            | В то время, как многие ходили по различным конференциям, слушали рассказы теоретиков и супер-звезд российского e-commerce, эти 15 предпринимателей работали над своими проектами. 
+
+
+    section#screen-three(class='block white-block')
+      .svg-section
+        svg(height="600" width="270")
+          line(x1="270" y1="0" x2="0" y2="600")
+        svg(height="600" width="270")
+          line(x1="270" y1="0" x2="0" y2="600")
+        svg(height="600" width="270")
+          line(x1="270" y1="0" x2="0" y2="600")
+      .block-inner
+        h2
+          | От <span class='red-selection'>15</span> практиков вы узнаете
+        .column
           ul
             li
               span 01
@@ -168,81 +167,68 @@ html
             li
               span 05
               p
-                | Каким образом они организуют работу с поставщиками, строят и оптимизируют логистику, ведут бухгалтерский учет и решают вечные проблемы с IT
+                | А также, как они бороли свои страхи и находили выход из самых сложных ситуаций
+        .column
+          ul
             li
               span 06
               p
-                | Как делать эффективную рекламу, развивать продажи, самостоятельно организовывать импорт товаров, производство и открыть розницу
+                | Каким образом они организуют работу с поставщиками, строят и оптимизируют логистику, ведут бухгалтерский учет и решают вечные проблемы с IT
             li
               span 07
               p
-                | Что нужно для правильной автоматизации процессов
+                | Как делать эффективную рекламу, развивать продажи, самостоятельно организовывать импорт товаров, производство и открыть розницу
             li
               span 08
               p
+                | Что нужно для правильной автоматизации процессов
+            li
+              span 09
+              p
                 | Какие маркетинговые инструменты оказались эффективными, а какие чуть не разорили их
-          p.slogan
-            | А также, как они бороли свои страхи и находили выход из самых сложных ситуаций
 
 
-    section#screen-four(class='block white-block')
-      .svg-section
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-      .block-inner
-        h2
-          | Вы узнаете о разных путях 15 интернет — предпринимателей:
-        ul
-          li
-            .circle
-              i.icon-icon-1
-            p
-              | Как открывать магазин без бюджета, на кредитные или инвестиционные деньги
-          li
-            .circle
-              i.icon-icon-2
-            p
-              | Возможно ли совмещать магазин с основной работой или вовсе бросить всё
-          li
-            .circle
-              i.icon-icon-3
-            p
-              | Как создать крупный интернет-магазин с большим штатом сотрудников или делать успешный интернет-магазин из дома
-          li
-            .circle
-              i.icon-icon-4
-            p
-              | Способы ухода из оффлайна в онлайн и как из онлайна расширять бизнес в оффлайн
-
-
-    section#screen-five(class='block blue-block')
+    section#screen-seven(class='block black-block about-screen')
       .block-color
         .svg-section
           svg(height="600" width="270")
             line(x1="270" y1="0" x2="0" y2="600")
           svg(height="600" width="270")
             line(x1="270" y1="0" x2="0" y2="600")
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
-          h3
-            | Я уже готов пойти
-          div(class="button-light reg-button") Регистрация
-
-
-    section#screen-six(class='block white-block')
-      .svg-section
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-      .block-inner
-        .box
-          span.count 15
-          h1 Реальных историй
-          p от владельцев интернет-магазинов
-          p
-            | Секреты и фишки. Страхи и воля к победе. Откровенные <br>
-            | провалы и ошеломительные успехи. <br>
-            | Вы услышите всё!
+          h2
+            | Организаторы и ведущие мероприятия
+          ul.org-column
+            li
+              .photo-circle
+              h4 Давлет Сулейманов
+              a(class='link' href="http://www.rezedasuleyman.com/") http://www.rezedasuleyman.com/
+              ul.social
+                li
+                  a(href="http://instagram.com/davlet" target="_blank" class="inst icon-insta")
+                li
+                  a(href="https://vk.com/id184504188" target="_blank" class="vk icon-vk")
+                li
+                  a(href="https://www.facebook.com/s.davlet" target="_blank" class="fb icon-fb")
+              p
+                | Бывший владелец сети интернет-магазинов посуды. Создал сеть из 18 брендовых сайтов, развил ее и успешно продал. Возглавлял интернет-магазин Групона. Создал с нуля бренд, лидирующий на рынке мусульманской одежды в России, наладил производство и создал сеть розничных магазинов.
+            li
+              .photo-circle
+              h4 Борис Преображенский
+              a(class='link' href="http://preboris.ru/") http://preboris.ru/
+              ul.social
+                li
+                  a(href="http://instagram.com/preboris" target="_blank" class="inst icon-insta")
+                li
+                  a(href="https://vk.com/preboris" target="_blank" class="vk icon-vk")
+                li
+                  a(href="https://www.facebook.com/preboris?fref=ts" target="_blank" class="fb icon-fb")
+              p
+                | В разное время Борис являлся создателем, владельцем или совладельцем компаний: ForOffice.ru — крупнейшего поставщика печатного и полиграфического оборудования, Швейные Технологии SewTech.ru, Mir-Karcher.ru — крупнейшего интернет-магазина оборудования Karcher, Лайф Кафе, производства пиломатериалов Лесорубка.ру, типографии ZiPrint, интернет-магазина Genergy.ru, сервисной компании Воздушник, онлайн b2b-портала Rusmarket.ru, крупнейшего московского свадебного салона, рекламного агентства Новые Линии Продвижения, поставщика печатного 3D оборудования 3dplotter.ru, многих других различных интернет-магазинов и онлайн-проектов
 
 
     section#screen-seven(class='block white-block about-screen')
@@ -257,44 +243,17 @@ html
           line(x1="270" y1="0" x2="0" y2="600")
       .block-inner
         h2
-          | Организаторы и ведущие мероприятия
-        ul.org-column
-          li
-            .photo-circle
-            h4 Давлет Сулейманов
-            a(href="http://www.rezedasuleyman.com/") http://www.rezedasuleyman.com/
-            ul.social
-              li
-                a(href="http://instagram.com/davlet" target="_blank" class="inst icon-insta")
-              li
-                a(href="https://vk.com/id184504188" target="_blank" class="vk icon-vk")
-              li
-                a(href="https://www.facebook.com/s.davlet" target="_blank" class="fb icon-fb")
-            p
-              | Бывший владелец сети интернет-магазинов посуды. Создал сеть из 18 брендовых сайтов, развил ее и успешно продал. Возглавлял интернет-магазин Групона. Создал с нуля бренд, лидирующий на рынке мусульманской одежды в России, наладил производство и создал сеть розничных магазинов.
-          li
-            .photo-circle
-            h4 Борис Преображенский
-            a(href="http://preboris.ru/") http://preboris.ru/
-            ul.social
-              li
-                a(href="http://instagram.com/preboris" target="_blank" class="inst icon-insta")
-              li
-                a(href="https://vk.com/preboris" target="_blank" class="vk icon-vk")
-              li
-                a(href="https://www.facebook.com/preboris?fref=ts" target="_blank" class="fb icon-fb")
-            p
-              | В разное время Борис являлся создателем, владельцем или совладельцем компаний: ForOffice.ru — крупнейшего поставщика печатного и полиграфического оборудования, Швейные Технологии SewTech.ru, Mir-Karcher.ru — крупнейшего интернет-магазина оборудования Karcher, Лайф Кафе, производства пиломатериалов Лесорубка.ру, типографии ZiPrint, интернет-магазина Genergy.ru, сервисной компании Воздушник, онлайн b2b-портала Rusmarket.ru, крупнейшего московского свадебного салона, рекламного агентства Новые Линии Продвижения, поставщика печатного 3D оборудования 3dplotter.ru, многих других различных интернет-магазинов и онлайн-проектов
-        h2
-          | На мероприятии выступят
+          | На <span class='red-selection'>мероприятии</span> выступят
         ul.org-list
           li
             .circle-block
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 01 Артем Соколов
-              a(target="_blank" href="http://fotololo.ru") http://fotololo.ru
+              a(class="name" target="_blank" href="#")
+                span 01
+                | Артем Соколов
+              a(class="red-selection" target="_blank" href="http://fotololo.ru") http://fotololo.ru
               p
                 | "Мы Вам не перезвоним или как вдвоем обрабатывать 100 заказов в день". <br><br> Артем в интернет-торговле с 2007 года, начинал с продаж обуви и одежды, пока это не стало мейнстримом. Открыл более 10 магазинов по совершенно разным тематикам: косметика, продукты, зоотовары, подарки, мягкие игрушки, мебель. Артем расскажет о том, как вырастить успешный интернет-магазин "на свои" деньги, как максимально автоматизировать процессы, не теряя много времени на разработку, а используя уже работающие на рынке процессы. 
           li
@@ -302,8 +261,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 02 Анна Шмигановская
-              a(target="_blank" href="http://odstore.ru") http://odstore.ru
+              a(class="name" target="_blank" href="#")
+                span 02
+                | Анна Шмигановская
+              a(class="red-selection" target="_blank" href="http://odstore.ru") http://odstore.ru
               p
                 | Интернет-магазин был открыт 2 года назад. В начале создавалась онлайн примерочная, которую пытались продавать интернет-магазинам, но дело не пошло, тогда, чтобы не закрываться, решили сделать свой магазин. В качестве ниши была выбрана концепция продаж одежды только российских дизайнеров. На начальных этапах оборот доходил до 300 тысяч рублей в месяц при расходах в 600 тысяч, постепенно вырос до 700 тысяч, а после открытия магазина в ТЦ — до 1,5 млн. За 2 года работы интернет-магазин начал сотрудничать со 105 дизайнерами и строит большие планы на будущее
           li
@@ -311,8 +272,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 03 Алексей Музыка
-              a(target="_blank" href="http://parikmag.ru") http://parikmag.ru
+              a(class="name" target="_blank" href="#")
+                span 03
+                | Алексей Музыка
+              a(class="red-selection" target="_blank" href="http://parikmag.ru") http://parikmag.ru
               p
                 | Владимир и Алексей являются владельцами интернет-магазина профессиональной косметики. Они расскажут, как развивали магазин с нуля до 2000 заказов в месяц, строили розничную сеть на свои средства, как создавали аудиторию, монетизировали трафик, об опыте партнерства, подводных камнях роста и постоянном самосовершенствовании. Они поделятся самым дорогим, что у них есть — своими ошибками. Неправильные управленческие решения, кризисы развития, подбор кадров, бюджетирование, опыт взаимодействия с банками. Они расскажут, как находили выход из сложных ситуаций, и что, с их точки зрения, является главными моментами, которые нельзя упустить, для развития успешного интернет-магазина.
           li
@@ -320,8 +283,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="https://www.facebook.com/den.kolosov/info") 04 Денис Колосов
-              a(target="_blank" href="http://superposuda.ru") http://superposuda.ru
+              a(class="name" target="_blank" href="https://www.facebook.com/den.kolosov/info")
+                span 04
+                | Денис Колосов
+              a(class="red-selection" target="_blank" href="http://superposuda.ru") http://superposuda.ru
               p
                 | Денис начинал свой бизнес с интернет-магазина с посуды, постепенно расширяя его ассортимент. Денис расскажет, как он создал успешный интернет-магазин с более чем 50 заказами в день с начальным бюджетом в 15 тысяч рублей, не выходя из дома. Расскажет, как отдал максимум возможного на аутсорсинг, и, как получилось, что на сегодняшний день магазин обслуживают всего 3 человека.
           li
@@ -329,8 +294,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 05 Андрей Артищев
-              a(target="_blank" href="http://masterosanki.ru") http://masterosanki.ru
+              a(class="name" target="_blank" href="#")
+                span 05
+                | Андрей Артищев
+              a(class="red-selection" target="_blank" href="http://masterosanki.ru") http://masterosanki.ru
               p
                 | Андрей создал известный продукт для исправления осанки — Мастер Осанки. Андрей расскажет о том, как он открывал свой интернет-магазин, как решал вопросы с доставкой, что с его точки зрения лучше — выбрать собственную или пользоваться услугами фулфилмента. Расскажет о том, как он вырос до 1000 отправок в месяц, и какие планы он строит на будущее
           li
@@ -338,8 +305,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 06 Галина Апрышкина
-              a(target="_blank" href="http://happyhome.ru") http://happyhome.ru
+              a(class="name" target="_blank" href="#")
+                span 06
+                | Галина Апрышкина
+              a(class="red-selection" target="_blank" href="http://happyhome.ru") http://happyhome.ru
               p
                 | У основателей этих интернет-магазинов основной целью открытия было "освободить себе руки" от офисной рутины для занятия альпинизмом, танцами, изучением восточных языков. Галина говорит, что как ни странно, но это получилось, хотя всё развивалось медленно и неправильно. Повезло, что изначально были выбраны свободные ниши, но так как интернет-магазины имеют собственный склад, курьерскую службу и IT, то наступить успели на все «грабли». Одновременно находится в Москве у трёх владельцев интернет-магазинов получается очень редко, так что полная автоматизация, структурированная работа с оперативным персоналом, поставщиками и фрилансерами, это их "всё". До сих пор для рекламы магазинов не использовалось ничего кроме оптимизации для органического поиска, но сейчас начинаются эксперименты с директом, социальными сетями и CPA, о первых результатах Галина обещает рассказать 21 июня.Штат у магазинов не очень большой: 2 оператора, 3 сотрудника склада, до 20 курьеров в сезон. На аутсорсинге — бухгалтерия, копирайтеры, баннермейкер. В день выполняется до 100 заказов.
           li
@@ -347,8 +316,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 07 Артемий Егоров
-              a(target="_blank" href="http://glavap.ru") http://glavap.ru
+              a(class="name" target="_blank" href="#")
+                span 07
+                | Артемий Егоров
+              a(class="red-selection" target="_blank" href="http://glavap.ru") http://glavap.ru
               p
                 | Артемий с 2011 года является совладельцем интернет-магазина медицинских товаров. Его магазин является партнером нескольких сетевых аптек. Оборот магазина более 1 млн рублей в месяц. Ассортимент магазина составляет около 27 тысяч товаров, для 5 тысяч из которых, делалась собственная фотосессия. Артемий расскажет историю своего магазина, о том, как можно зарабатывать на медицинских товарах, а также о своем «коньке» — отлично построенной автоматизации всех процессов и работе с конентом в масштабе десятков тысяч товаров.
           li
@@ -356,8 +327,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 08 Дмитрий Кибкало
-              a(target="_blank" href="http://mosigra.ru") http://mosigra.ru
+              a(class="name" target="_blank" href="#")
+                span 08
+                | Дмитрий Кибкало
+              a(class="red-selection" target="_blank" href="http://mosigra.ru") http://mosigra.ru
               p
                 | Дмитрий — основатель сети магазинов настольных игр "Мосигра". <br> "Мосигра" начиналась с интернет-магазина, торгующего 20 лучшими играми. К 2014 году компания выросла до крупной розничной сети. У "Мосигры" есть 4 интернет-магазина: Мосигра (настольные игры), Мосигрушка (радиоуправляемые модели, игрушечное оружие и т.д.), Ямочки (плюшевые игрушки) и Любить (подарки), а также свое издательство "Магеллан". Дмитрий расскажет, как создавался интернет-магазин Mosigra.ru, как он превратился в крупнейшего продавца настольных игр в России и Восточной Европе.
           li
@@ -365,16 +338,20 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 09 Павел Доронин
-              a(target="_blank" href="http://kolgotoff.ru") http://kolgotoff.ru
+              a(class="name" target="_blank" href="#")
+                span 09
+                | Павел Доронин
+              a(class="red-selection" target="_blank" href="http://kolgotoff.ru") http://kolgotoff.ru
               p
                 | Павел — основатель и управляющий директор онлайн-гипермаркета женских товаров на каждый день Mr.Kolgotoff. Павел расскажет о том, как:<br>- из обычного похода с женой в магазин получился собственный онлайн-бизнес;<br>- 5 раз менял бизнес-модель и нашел ту, которая работает;<br>- поднял конверсию на сайте в 2 раза за счет работы с ассортиментом;<br>- в 1 день появился долг перед поставщиком в 1 млн руб. и как выходил из этой ситуации;<br>- потерял четверть месячной выручки перед новым годом;<br>- не побоялся отказаться от части клиентов, и, как это привело к росту чистой прибыли;<br>- поднял выручку, уменьшив кол-во рассылаемых акций;<br>- важно использовать такие инструменты, как Unit economics и когортный анализ.<br>И еще 10 работающих практических «фишек» емэйл-маркетинга.
           li
             .circle-block
               .circle
             .text-block
-              a(class="name" target="_blank" href="#") 10 Александр Мальцев
-              a(target="_blank" href="http://fabika.ru") http://fabika.ru
+              a(class="name" target="_blank" href="#")
+                span 10
+                | Александр Мальцев
+              a(class="red-selection" target="_blank" href="http://fabika.ru") http://fabika.ru
               p
                 | Александр является сооснователем Fabika.ru, которую за полгода смог довести до прибыльности и объема продаж в 30 тысяч долларов в день. Руководит Social Marketing’ом в eBay, до этого развивал перспективные направления продаж в Groupon, координировал создание новых подразделений KupiVip.Александр расскажет о том, как начиналась Fabika, как велись поиски инвесторов и шли переговоры, как собралась одна из лучших e-commerce команд в молодом стартапе, как и почему Fabika начала активнее всех продвигаться в социальных сетях, как велись переговоры с внешними партнерами, и, почему он вышел из проекта. Отдельное внимание будет уделено Social Media маркетингу и организации канала сбыта в социальных сетях.
           li
@@ -382,8 +359,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 11 Александр Орлов
-              a(target="_blank" href="http://imagetime.ru") http://imagetime.ru
+              a(class="name" target="_blank" href="#")
+                span 11
+                | Александр Орлов
+              a(class="red-selection" target="_blank" href="http://imagetime.ru") http://imagetime.ru
               p
                 | Александр является владельцем интернет магазина ImageTime.ru. Являясь специалистом в области интернет маркетинга и SEO, он с нуля и без вложений создал интернет-магазин наручных часов. Александр расскажет, как он выбрал нишу, ее плюсы и минусы; как его практически разорила контекстная реклама; почему, имея хороший сайт и находясь в топе Яндекса, продаж может не быть; с какими транспортными компаниями он работает и какие возникают проблемы, как он расставляет товар на полках сайта, чтобы дать людям то, что им действительно нужно, какие простые правила, он использует, чтобы интернет-магазин оставался конкурентно способным в условиях постоянно растущего рынка.
           li
@@ -391,8 +370,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 12 Николай Федоткин
-              a(target="_blank" href="http://video-shoper.ru") http://video-shoper.ru
+              a(class="name" target="_blank" href="#")
+                span 12
+                | Николай Федоткин
+              a(class="red-selection" target="_blank" href="http://video-shoper.ru") http://video-shoper.ru
               p
                 | Николай начал свою «интернет-магазинную» историю в 2009 году. На сегодняшний день оборот его магазинов составляет около 1 млрд. рублей в год. Сотрудники работают в Москве, Санкт-Петербурге, Брянске. Николай расскажет историю создания и развития своих магазинов, о том, как и за счет чего ему удается успешно работать в очень конкурентной среде, о магазинах, которые пришлось закрыть, о сложностях, с которыми он сталкивался и планах на будущее.
           li
@@ -400,8 +381,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 13 Георгий Гнутов
-              a(target="_blank" href="http://funflowers.ru") http://funflowers.ru
+              a(class="name" target="_blank" href="#")
+                span 13
+                | Георгий Гнутов
+              a(class="red-selection" target="_blank" href="http://funflowers.ru") http://funflowers.ru
               p
                 | Георгий работает в крупной нефтяной компании начальником отдела айдентики и медиа проектов. В 2008 году Георгий сделал сайты трём совхозам, которые занимались выращиванием цветов. Потом была дипломная работа в институте по теме "интернет-магазин цветов". Тогда и появилась первая версия сайта, которая работала исключительно на доставку цветов оптом и на 8 марта. Весь процесс организовал через магазин при совхозе и никогда особо им не занимался, получал дополнительный доход от продаж.Так сайт и существовал до конца 2011 года. Тогда же на форуме Searchengines Георгий познакомился с будущим партнером, с которым сначала собирались заняться тур бизнесом(туризмом?) и зарабатывать на продажах рекламы, но поняли, что цветы быстрей принесут денег. Так и родился новый funflowers.ru. Начали работу с чистого листа: нарисовали новый сайт, сняли офис, нашли флористов, наладили все процессы операционной деятельности. Весь проект делали только вдвоем, начиная от дизайна сайта, фотографий букетов до А/Б тестирования, аналитики и рекламы. Год с небольшим магазин работал в минус, пока на своих ошибках не получилось построить правильную схему работы. Цветочный рынок очень большой и требует очень больших вложений, но магазину удалось занять маленькую долю рынка, которая постепенно растет при минимальных вложениях со стороны владельцев. На сегодняшний день в магазине собрана отличная команда, которая занимается операционной деятельностью, обрабатывает и доставляет заказы, а Георгий с партнером удаленно занимаются управлением, контролем и привлечением трафика.
           li
@@ -409,8 +392,10 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 14 Гоша Семенов
-              a(target="_blank" href="http://i-lux.ru") http://i-lux.ru
+              a(class="name" target="_blank" href="#")
+                span 14
+                | Гоша Семенов
+              a(class="red-selection" target="_blank" href="http://i-lux.ru") http://i-lux.ru
               p
                 | В начале 2012 года Гоша Семенов стал партнером и исполнительным директором в 6 интернет-магазинах премиум и люкс аксессуаров, флагманским проектом из которых является iLux.ru. До этого, на протяжении 4 лет, занимался развитием мультиканальных продаж магазина школьных аксессуаров, где получил бесценный опыт построения интернет-продаж с нуля. За два года в iLux успели поменять бизнес модель, отладить бизнес процессы, собрать молодую команду и вырасти в прибыли на 60%.<br>В 2013 году удалось побить сразу два рекорда:<br>- самый большой онлайн чек в 900 000 руб<br>- превзойти планку в 1000 заказов в месяц.
           li
@@ -418,90 +403,76 @@ html
               .circle
               .logo
             .text-block
-              a(class="name" target="_blank" href="#") 15 Гай Карапетян
-              a(target="_blank" href="http://maido.ru") http://maido.ru
+              a(class="name" target="_blank" href="#")
+                span 15
+                | Гай Карапетян
+              a(class="red-selection" target="_blank" href="http://maido.ru") http://maido.ru
               p
                 | В 2009 году Гая сократили. "У меня на руках было 200 тыс. рублей, и надо было выбирать — реализовать мечту, открыв свой бизнес, или идти искать работу". Он рискнул и создал свой первый магазин детского термобелья "Ему-Тепло" с оборотом в 20 млн. рублей в год.  В 2013 был открыт магазин медицинской техники "Всемедтовары". Дойдя за 3 месяца до 50 продаж в день, проект "провалился". Что же было не так, каковы факторы, определяющие успех интернет-магазина, и какие ошибки приводят к провалу? В январе 2014 года, имея на руках все те же 200 тыс. рублей, Гай Карапетян создал полную копию "всехмедтоваров" — магазин Майдо. К апрелю оборот  начал составлять более одного миллиона рублей и была получена первая операционная прибыль. За лето 2014 года в планы владельцев входит утроить обороты.
 
 
-    section#screen-eight(class='block blue-block')
+    section#screen-six(class='block white-block')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
-      .block-color
-        .block-inner
-          h3
-            | Конечно иду!
-          div(class="button-light reg-button") Регистрация
-
-
-    section#screen-nine(class='block white-block')
       .block-inner
-        h2
-          | Партнеры мероприятия
-        ul
-          li
-            a(href="http://payu.ru/" target="blank")
-              .partner
-              span PayU
-          li
-            a(href="http://retailrocket.ru/" target="blank")
-              .partner
-              span Retail Rocket
-          li
-            a(href="http://www.insales.ru/" target="blank")
-              .partner
-              span InSales
-          li
-            a(href="http://www.sociomantic.ru/" target="blank")
-              .partner
-              span Sociomantic
-          li
-            a(href="http://shop-logistics.ru/" target="blank")
-              .partner
-              span Shoplogistic
-        .button-block
-          a(class="button pop-up-button" id="partner_button") Cтать партнером
-          a(class="button" href="/partners.html") Все партнеры
+        .box
+          span.count 15
+          h2 Реальных историй
+          p от владельцев интернет-магазинов
+          br
+          p
+            | Секреты и фишки. Страхи и воля к победе. <br>
+            | Откровенные провалы и ошеломительные успехи. <br>
+            | Вы услышите всё!
 
 
-    section#screen-ten(class='block blue-block')
+    section#screen-five(class='block white-block')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
+      .block-inner
+        h3
+          | Я уже готов пойти
+        div(class="button-light reg-button") Регистрация
+
+
+    section#screen-four(class='block black-block')
       .block-color
+        .svg-section
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
           h2
-            | Кому важно пойти
-          .icon-person
+            | Вы узнаете о разных путях <br>15 интернет — предпринимателей:
           ul
             li
-              span 01
+              .circle
+                i.icon-icon-1
               p
-                | Тем, кто только задумывается об открытии интернет-магазина: мероприятие поможет понять, нужно ли вам это, готовы ли вы пройти через все эти сложности и, если готовы, то, как и с чего следует начать.
+                | Как открывать магазин без бюджета, на кредитные или инвестиционные деньги
             li
-              span 02
+              .circle
+                i.icon-icon-2
               p
-                | Начинающим интернет-магазинщикам: вы получите ответы на актуальные вопросы, узнаете, как избежать ошибок и каким курсом вам двигаться дальше.
+                | Возможно ли совмещать магазин с основной работой или вовсе бросить всё
             li
-              span 03
+              .circle
+                i.icon-icon-3
               p
-                | Опытным предпринимателям: вы сможете обменяться опытом с коллегами и обогатить свой арсенал новыми «фишками».
+                | Как создать крупный интернет-магазин с большим штатом сотрудников или делать успешный интернет-магазин из дома
             li
-              span 04
+              .circle
+                i.icon-icon-4
               p
-                | Всем интересующимся интернет-торговлей: на целый день вы погрузитесь в тему интернет-торговли и существенно расширите свои познания в одной из самых актуальных и перспективных на сегодня тем.
-            li
-              span 05
-              p
-                | Всем сотрудникам интернет-магазинов, кто хочет расти, расширять свой кругозор и учиться на чужом опыте. 
+                | Способы ухода из оффлайна в онлайн и как из онлайна расширять бизнес в оффлайн
 
 
-    section#screen-eleven(class='block white-block')
+    section#screen-ten(class='block white-block')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
@@ -509,22 +480,75 @@ html
           line(x1="270" y1="0" x2="0" y2="600")
       .block-inner
         h2
-          | Всего за 1 день
-        .banner-block
-          .clock
-            .icon-clock-in
-            .icon-clock
-          p.text-1
-            | Вы познакомитесь абсолютно со всеми <br>аспектами жизни интернет-магазина <br> и его владельца. Вы где-то еще <br> такое встречали? 
-          p.text-2
-            | Вы получите исчерпывающие ответы на любые вопросы от 15 опытных интернет-магазинщиков;
-          p.text-3
-            | Вы окунетесь в разные тематики, <br> разные форматы интернет-магазинов;
-          p.text-4
-            | Заведете много интересных <br> и полезных знакомств. 
+          | Кому <span class='red-selection'>важно</span> пойти
+        .icon-person
+        ul
+          li
+            span 01
+            p
+              | Тем, кто только задумывается об открытии интернет-магазина: мероприятие поможет понять, нужно ли вам это, готовы ли вы пройти через все эти сложности и, если готовы, то, как и с чего следует начать.
+          li
+            span 02
+            p
+              | Начинающим интернет-магазинщикам: вы получите ответы на актуальные вопросы, узнаете, как избежать ошибок и каким курсом вам двигаться дальше.
+          li
+            span 03
+            p
+              | Опытным предпринимателям: вы сможете обменяться опытом с коллегами и обогатить свой арсенал новыми «фишками».
+          li
+            span 04
+            p
+              | Всем интересующимся интернет-торговлей: на целый день вы погрузитесь в тему интернет-торговли и существенно расширите свои познания в одной из самых актуальных и перспективных на сегодня тем.
+          li
+            span 05
+            p
+              | Всем сотрудникам интернет-магазинов, кто хочет расти, расширять свой кругозор и учиться на чужом опыте. 
 
 
-    section#screen-twelve(class='block blue-block')
+    //- section#screen-eight(class='block black-block')
+    //-   .svg-section
+    //-     svg(height="600" width="270")
+    //-       line(x1="270" y1="0" x2="0" y2="600")
+    //-     svg(height="600" width="270")
+    //-       line(x1="270" y1="0" x2="0" y2="600")
+    //-   .block-color
+    //-     .block-inner
+    //-       h3
+    //-         | Конечно иду!
+    //-       div(class="button-light reg-button") Регистрация
+
+
+    //- section#screen-nine(class='block white-block')
+    //-   .block-inner
+    //-     h2
+    //-       | Партнеры мероприятия
+    //-     ul
+    //-       li
+    //-         a(href="http://payu.ru/" target="blank")
+    //-           .partner
+    //-           span PayU
+    //-       li
+    //-         a(href="http://retailrocket.ru/" target="blank")
+    //-           .partner
+    //-           span Retail Rocket
+    //-       li
+    //-         a(href="http://www.insales.ru/" target="blank")
+    //-           .partner
+    //-           span InSales
+    //-       li
+    //-         a(href="http://www.sociomantic.ru/" target="blank")
+    //-           .partner
+    //-           span Sociomantic
+    //-       li
+    //-         a(href="http://shop-logistics.ru/" target="blank")
+    //-           .partner
+    //-           span Shoplogistic
+    //-     .button-block
+    //-       a(class="button pop-up-button" id="partner_button") Cтать партнером
+    //-       a(class="button" href="/partners.html") Все партнеры
+
+
+    section#screen-eleven(class='block black-block')
       .block-color
         .svg-section
           svg(height="600" width="270")
@@ -533,150 +557,174 @@ html
             line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
           h2
-            | Фотографии с прошлого практика days
-        #photoalbum.photoalbum
-          img(src='../images/photo/1.jpg')
-          img(src='../images/photo/2.jpg')
-          img(src='../images/photo/3.jpg')
-          img(src='../images/photo/4.jpg')
-          img(src='../images/photo/5.jpg')
-          img(src='../images/photo/6.jpg')
-          img(src='../images/photo/7.jpg')
-          img(src='../images/photo/8.jpg')
-          img(src='../images/photo/9.jpg')
-          img(src='../images/photo/10.jpg')
-          img(src='../images/photo/11.jpg')
-          img(src='../images/photo/12.jpg')
-          img(src='../images/photo/13.jpg')
-          img(src='../images/photo/14.jpg')
-          img(src='../images/photo/15.jpg')
-          img(src='../images/photo/16.jpg')
-          img(src='../images/photo/17.jpg')
-          img(src='../images/photo/18.jpg')
+            | Всего за 1 день
+          .banner-block
+            .clock
+              .icon-clock-in
+              .icon-clock
+            p.text-1
+              | Вы познакомитесь абсолютно со всеми <br>аспектами жизни интернет-магазина <br> и его владельца. Вы где-то еще <br> такое встречали? 
+            p.text-2
+              | Вы получите исчерпывающие ответы на любые вопросы от 15 опытных интернет-магазинщиков;
+            p.text-3
+              | Вы окунетесь в разные тематики, <br> разные форматы интернет-магазинов;
+            p.text-4
+              | Заведете много интересных <br> и полезных знакомств. 
 
 
-    section#screen-thirteen(class='block white-block')
+    section#screen-twelve(class='block white-block')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
-        svg(height="6000" width="2700")
-          line(x1="2700" y1="0" x2="0" y2="6000")
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
       .block-inner
         h2
-          | ЧТо говорят о прошлом мероприятии практика days
-        .reviews
-          ul#review_list
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | Спасибо за мероприятие! Практика Days стала первой возможностью в этом году пообщаться с коллегами по цеху. Отмечу очень дружную атмосферу, никакого пафоса крупных отраслевых мероприятий. В то же время – никаких "профессиональных спикеров", только предприниматели, которые делились реальным опытом (не всегда успешным, что даже более ценно). Формат очень понравился, обязательно буду в следующий раз!
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/nikolay.khlebinsky?ref=ts&fref=ts") Николай Хлебинский
-                span RetailRocket
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | "ПрактикаDays - образовательное мероприятие, которое немного отличается от стандартных конференций. Если честно, вот такого формата консультаций очень не хватало когда мы только запускались. Думаю слушателям было полезно, а открытый и свободный формат (почти все выступали без презентаций) сделали доклады более живыми и насыщенными. Еще отметил для себя, что разные выступления закрыли целый спектр вопросов по разным сферам e-commerce, от насущных проблем интернет магазинщиков, до поиска и привлечения инвестиций. Я сам унес с конференции пару интересных схем в блокноте для идей и искренне порадовался за некоторые проекты от которых были доклады! Если вам интересно познакомиться лично с весьма интересными людьми, получить свежие идеи и ответить на насущные вопросы - цена участия не столь велика!"
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/chupin.anton?fref=ts") Антон Чупин
-                span Udivishop.ru
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | Мероприятие от Бориса и Давлета - тот волшебный пендель, который может получить любой сомневающийся в вопросе "открыть или не открыть свой ИМ". Простые люди, такие же как и все, делятся своей болью и радостью создания магазина. Очень рекомендую к посещению!
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/andrey.khvostov?fref=ts") Андрей Хворостов
-                span Appak.ru
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | Для меня «Практика» была не только интересной, но и результативной. Насыщенная программа, заинтересованная аудитория, отличная организация, все это оставило положительные впечатления. На мероприятии нашел для себя уйму нужной информации из реальных кейсов владельцев интернет-магазинов. Кроме этого, удалось наладить полезные деловые связи с сеошниками, маркетологами, дизайнерами и другими стоящими людьми, которые уже дали несколько дельных советов по моему магазину. Уверен, что потенциал развития у «Практике» просто огромный. Любому, кто хочет заняться интернет-торговлей определенно стоит прийти и послушать мотивирующие истории «зрелых» магазинщиков. Ни капли не жалею, что стал участником такого мероприятия!
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/apochechun?fref=ts") Андрей Почечун
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | "Спасибо большое Борис Преображенский и Давлет Сулейманов за чудесное мероприятие, которое помогло расставить точки над ""и"" по нескольким вопросам, ну и за плюшки в прямом и переносном смысле огромное спасибо!!!"
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/gorelovka?fref=ts") Юлия Горелова
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | "Мероприятие на 100% оправдало название - 15 выступлений от практиков с абсолютно разным профилем и опытом. Разобрали почти все нюансы создания и развития интернет-магазинов. Организаторам большой плюс и за атмосферу - было очень комфортно. Это касается и программы, и неформальной обстановки, и кофе-брейков."
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/vvgusev?ref=ts&fref=ts") Владимир Гусев
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | "Новый интересный формат: Только личный практический опыт, никакой теории. Докладчики из различных сфер и с разным опытом. Доклады не только об успехах, но и о неудачах. Вопросы из зала и общение в кулуарах. Мероприятие, однозначно, полезно всем, кто связан с ecommerce."
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/den.kolosov/info") Денис Колосов
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | "Спасибо Борису Преображенскому за ПрактикаDays. На мероприятии услышал истории успеха и неудач реальных интернет-магазинов из первых уст. То, чем обычно делятся в кулуарах, было рассказано для широкой аудитории. Особенно понравилось то, что было рассказано 15 разноплановых историй магазинов в разных тематиках, различных по размеру и уровню развития. Очень рекомендую всем тем, кто только задумывается о создании своего магазина или только начинает свою интернет-торговлю!"
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/chistoborodov?fref=ts") Кирилл Чистобородов
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | ПрактикаDays укладывается в мое представление идеальных конференций. Никакой абстракной теории, только жизненная практика. Обмен опытом с людьми, у которых одинаковые с тобой проблемы. Да еще и вкусно кормят
-              .review-author
-                a(target="_blank" href="") Андрей Сыцко
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | Крутые! отличный концепт мероприятия! супер промо! результат - море "включенных" в тему лиц в зале. В июне быть непременно!
-              .review-author
-                a(target="_blank" href="https://www.facebook.com/mariya.smorchkova?ref=ts&fref=ts") Мария Сморчкова
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | "У меня интернет-магазин, который я сделал на коленке, а первый офис был на кухне. Спустя годы пришла уверенность, что я нужен людям. И вот я в поисках, как поставить свою работу на более серьезный уровень: информативный сайт, сервисы, автоматизация и т.п. Ответы на свои вопросы я получаю из интернета и соответствующих мероприятий. В последний год я упорно посещал все семинары, которые мне попадались. И все чаще оставался осадок после семинаров, что организаторы или участники не дали ответов на вопросы, которые сами же декларировали в анонсе. С большой долей скепсиса я отправился и на ПрактикаDays. Но свершилось чудо! Я побывал на лучшем семинаре. Мне понравилось все: <br>1) Услышать простые истории, в чем-то похожие на мою, было гораздо интереснее, чем слушать про инвестиции в миллионы долларов. На семинаре ""Оборота"" ген. директор ""220 Вольт"" сказал, что если у вас нет $10млн., то вам можно не начинать свой бизнес в сфере DIY. А здесь половина выступающих начинали с нуля и им было что сказать.<br>2) Бывают участники интересные и не очень или совсем скучные. На вашем семинаре все участники были интересные и я ни разу не задремал на протяжении всего дня. Некоторых участников я уже встречал на других мероприятиях, но там их выступления были не такими интересными. ""Правильно заданный вопрос – половина ответа""(с) и организаторы задали выступающим очень правильные вопросы, тезисы. И мне ближе было услышать: ""Мой склад был в багажнике жигулей..."", чем ""У нас было 20млн. и мы открыли 5 филиалов"" как обычно хвастаются российские ""монстры"" e-commerce.<br>3) В последнее время каждый молодой человек или не очень молодой может открыть свой ИМ и многие начинают свой бизнес нуля. Поэтому есть определенный недостаток знаний в этой сфере. Книжки Котлера и Джобса это одно, нужно практическое образование для простых людей с учетом русских реалий. В перерывах к выступающим не возможно было подступиться, вокруг толклись с вопросами: ""А как..?"", ""подскажите..."". К Руслану из BabyBrick вообще не реально было подойти, его окружили, как дети-Банифация и не отпускали, пока не закончилось мероприятие. Мне кажется было бы интересным в будущем оставлять больше времени на вопросы или изменить формат. Вариант круглого стола, где все задают вопросы и все слышат ответы, такой массовый народный консалтинг. И чем больше примеров из обычной жизни, тем лучше.<br>Ложка дегтя: процесс приема пищи был затруднен из-за кол-ва народа. Пирожки с мясом были просто жесть! Но главное: пищи для мозга было предостаточно.<br>Спасибо организаторам и выступающим, все было супер! На будущие семинары обязательно приду!"
-              .review-author
-                a(target="_blank" href="") Владимир
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | "Очень круто было, молодцы. Очень понравился формат и контент мероприятия. Я с собой взял ноут и айпад, чтобы скучные выступления пропускать, но ни разу даже не включил их. И при этом было не напряжно, под конец 16 выступлений даже не устал, все было очень увлекательно. Вынес много полезной информации, очень много опыта, готовых сценариев, подсказок и чужих ошибок. В-общем, понравилось решительно все. Вы крутые!
-              .review-author
-                a(target="_blank" href="") Тимур Мингулов
-            li
-              .review-item
-                .icon-quote-top
-                .icon-quote-bottom
-                p
-                  | "Всё было отлично! Даже не ожидала что так будет круто. С удовольствием пошла бы ещё. Из пожеланий только качество звука, но это уже выше обещали решить."
-              .review-author
-                a(target="_blank" href="") Светлана П
-          .expander
-            .button#show_list_button Раскрыть все отзывы
+          | Фотографии с прошлого <span class='red-selection'>Практика Days</span>
+      #photoalbum.photoalbum
+        img(src='../images/photo/1.jpg')
+        img(src='../images/photo/2.jpg')
+        img(src='../images/photo/3.jpg')
+        img(src='../images/photo/4.jpg')
+        img(src='../images/photo/5.jpg')
+        img(src='../images/photo/6.jpg')
+        img(src='../images/photo/7.jpg')
+        img(src='../images/photo/8.jpg')
+        img(src='../images/photo/9.jpg')
+        img(src='../images/photo/10.jpg')
+        img(src='../images/photo/11.jpg')
+        img(src='../images/photo/12.jpg')
+        img(src='../images/photo/13.jpg')
+        img(src='../images/photo/14.jpg')
+        img(src='../images/photo/15.jpg')
+        img(src='../images/photo/16.jpg')
+        img(src='../images/photo/17.jpg')
+        img(src='../images/photo/18.jpg')
+
+
+    section#screen-thirteen(class='block black-block')
+      .block-color
+        .svg-section
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
+          svg(height="6000" width="2700")
+            line(x1="2700" y1="0" x2="0" y2="6000")
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
+        .block-inner
+          h2
+            | Что говорят о прошлых мероприятиях
+          .reviews
+            ul#review_list
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | Спасибо за мероприятие! Практика Days стала первой возможностью в этом году пообщаться с коллегами по цеху. Отмечу очень дружную атмосферу, никакого пафоса крупных отраслевых мероприятий. В то же время – никаких "профессиональных спикеров", только предприниматели, которые делились реальным опытом (не всегда успешным, что даже более ценно). Формат очень понравился, обязательно буду в следующий раз!
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/nikolay.khlebinsky?ref=ts&fref=ts") Николай Хлебинский
+                  span RetailRocket
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | "ПрактикаDays - образовательное мероприятие, которое немного отличается от стандартных конференций. Если честно, вот такого формата консультаций очень не хватало когда мы только запускались. Думаю слушателям было полезно, а открытый и свободный формат (почти все выступали без презентаций) сделали доклады более живыми и насыщенными. Еще отметил для себя, что разные выступления закрыли целый спектр вопросов по разным сферам e-commerce, от насущных проблем интернет магазинщиков, до поиска и привлечения инвестиций. Я сам унес с конференции пару интересных схем в блокноте для идей и искренне порадовался за некоторые проекты от которых были доклады! Если вам интересно познакомиться лично с весьма интересными людьми, получить свежие идеи и ответить на насущные вопросы - цена участия не столь велика!"
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/chupin.anton?fref=ts") Антон Чупин
+                  span Udivishop.ru
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | Мероприятие от Бориса и Давлета - тот волшебный пендель, который может получить любой сомневающийся в вопросе "открыть или не открыть свой ИМ". Простые люди, такие же как и все, делятся своей болью и радостью создания магазина. Очень рекомендую к посещению!
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/andrey.khvostov?fref=ts") Андрей Хворостов
+                  span Appak.ru
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | Для меня «Практика» была не только интересной, но и результативной. Насыщенная программа, заинтересованная аудитория, отличная организация, все это оставило положительные впечатления. На мероприятии нашел для себя уйму нужной информации из реальных кейсов владельцев интернет-магазинов. Кроме этого, удалось наладить полезные деловые связи с сеошниками, маркетологами, дизайнерами и другими стоящими людьми, которые уже дали несколько дельных советов по моему магазину. Уверен, что потенциал развития у «Практике» просто огромный. Любому, кто хочет заняться интернет-торговлей определенно стоит прийти и послушать мотивирующие истории «зрелых» магазинщиков. Ни капли не жалею, что стал участником такого мероприятия!
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/apochechun?fref=ts") Андрей Почечун
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | "Спасибо большое Борис Преображенский и Давлет Сулейманов за чудесное мероприятие, которое помогло расставить точки над ""и"" по нескольким вопросам, ну и за плюшки в прямом и переносном смысле огромное спасибо!!!"
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/gorelovka?fref=ts") Юлия Горелова
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | "Мероприятие на 100% оправдало название - 15 выступлений от практиков с абсолютно разным профилем и опытом. Разобрали почти все нюансы создания и развития интернет-магазинов. Организаторам большой плюс и за атмосферу - было очень комфортно. Это касается и программы, и неформальной обстановки, и кофе-брейков."
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/vvgusev?ref=ts&fref=ts") Владимир Гусев
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | "Новый интересный формат: Только личный практический опыт, никакой теории. Докладчики из различных сфер и с разным опытом. Доклады не только об успехах, но и о неудачах. Вопросы из зала и общение в кулуарах. Мероприятие, однозначно, полезно всем, кто связан с ecommerce."
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/den.kolosov/info") Денис Колосов
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | "Спасибо Борису Преображенскому за ПрактикаDays. На мероприятии услышал истории успеха и неудач реальных интернет-магазинов из первых уст. То, чем обычно делятся в кулуарах, было рассказано для широкой аудитории. Особенно понравилось то, что было рассказано 15 разноплановых историй магазинов в разных тематиках, различных по размеру и уровню развития. Очень рекомендую всем тем, кто только задумывается о создании своего магазина или только начинает свою интернет-торговлю!"
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/chistoborodov?fref=ts") Кирилл Чистобородов
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | ПрактикаDays укладывается в мое представление идеальных конференций. Никакой абстракной теории, только жизненная практика. Обмен опытом с людьми, у которых одинаковые с тобой проблемы. Да еще и вкусно кормят
+                .review-author
+                  a(target="_blank" href="") Андрей Сыцко
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | Крутые! отличный концепт мероприятия! супер промо! результат - море "включенных" в тему лиц в зале. В июне быть непременно!
+                .review-author
+                  a(target="_blank" href="https://www.facebook.com/mariya.smorchkova?ref=ts&fref=ts") Мария Сморчкова
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | "У меня интернет-магазин, который я сделал на коленке, а первый офис был на кухне. Спустя годы пришла уверенность, что я нужен людям. И вот я в поисках, как поставить свою работу на более серьезный уровень: информативный сайт, сервисы, автоматизация и т.п. Ответы на свои вопросы я получаю из интернета и соответствующих мероприятий. В последний год я упорно посещал все семинары, которые мне попадались. И все чаще оставался осадок после семинаров, что организаторы или участники не дали ответов на вопросы, которые сами же декларировали в анонсе. С большой долей скепсиса я отправился и на ПрактикаDays. Но свершилось чудо! Я побывал на лучшем семинаре. Мне понравилось все: <br>1) Услышать простые истории, в чем-то похожие на мою, было гораздо интереснее, чем слушать про инвестиции в миллионы долларов. На семинаре ""Оборота"" ген. директор ""220 Вольт"" сказал, что если у вас нет $10млн., то вам можно не начинать свой бизнес в сфере DIY. А здесь половина выступающих начинали с нуля и им было что сказать.<br>2) Бывают участники интересные и не очень или совсем скучные. На вашем семинаре все участники были интересные и я ни разу не задремал на протяжении всего дня. Некоторых участников я уже встречал на других мероприятиях, но там их выступления были не такими интересными. ""Правильно заданный вопрос – половина ответа""(с) и организаторы задали выступающим очень правильные вопросы, тезисы. И мне ближе было услышать: ""Мой склад был в багажнике жигулей..."", чем ""У нас было 20млн. и мы открыли 5 филиалов"" как обычно хвастаются российские ""монстры"" e-commerce.<br>3) В последнее время каждый молодой человек или не очень молодой может открыть свой ИМ и многие начинают свой бизнес нуля. Поэтому есть определенный недостаток знаний в этой сфере. Книжки Котлера и Джобса это одно, нужно практическое образование для простых людей с учетом русских реалий. В перерывах к выступающим не возможно было подступиться, вокруг толклись с вопросами: ""А как..?"", ""подскажите..."". К Руслану из BabyBrick вообще не реально было подойти, его окружили, как дети-Банифация и не отпускали, пока не закончилось мероприятие. Мне кажется было бы интересным в будущем оставлять больше времени на вопросы или изменить формат. Вариант круглого стола, где все задают вопросы и все слышат ответы, такой массовый народный консалтинг. И чем больше примеров из обычной жизни, тем лучше.<br>Ложка дегтя: процесс приема пищи был затруднен из-за кол-ва народа. Пирожки с мясом были просто жесть! Но главное: пищи для мозга было предостаточно.<br>Спасибо организаторам и выступающим, все было супер! На будущие семинары обязательно приду!"
+                .review-author
+                  a(target="_blank" href="") Владимир
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | "Очень круто было, молодцы. Очень понравился формат и контент мероприятия. Я с собой взял ноут и айпад, чтобы скучные выступления пропускать, но ни разу даже не включил их. И при этом было не напряжно, под конец 16 выступлений даже не устал, все было очень увлекательно. Вынес много полезной информации, очень много опыта, готовых сценариев, подсказок и чужих ошибок. В-общем, понравилось решительно все. Вы крутые!
+                .review-author
+                  a(target="_blank" href="") Тимур Мингулов
+              li
+                .review-item
+                  .icon-quote-top
+                  .icon-quote-bottom
+                  p
+                    | "Всё было отлично! Даже не ожидала что так будет круто. С удовольствием пошла бы ещё. Из пожеланий только качество звука, но это уже выше обещали решить."
+                .review-author
+                  a(target="_blank" href="") Светлана П
+            .expander
+              .button#show_list_button Раскрыть все отзывы
 
 
     section#screen-fourteen(class='block white-block')
@@ -765,7 +813,7 @@ html
             p безналичная оплата от компании
 
 
-    //- section#screen-sixteen(class='block blue-block')
+    //- section#screen-sixteen(class='block black-block')
     //-   .svg-section
     //-     svg(height="600" width="270")
     //-       line(x1="270" y1="0" x2="0" y2="600")
@@ -798,40 +846,41 @@ html
     //-           p безналичная оплата от компании
 
 
-    section#screen-seventeen(class='block white-block')
-      .svg-section
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-      .block-inner
-        h2 Чуть не забыли сказать
-        p
-          | Официальный партнер мероприятия, компания PayU, предоставила подарки для розыгрыша среди гостей мероприятия. 
-        .devices
-        h2.devices-title Розыгрыш iPad mini <br> и 2 iPod shuffle
-        .partners
-          div(class="partner-logo logo-1")
-            div(class='logo-part-one icon-logo-1')
-            div(class='logo-part-two icon-logo-2')
-          div(class="partner-logo logo-2")
-            div(class='payu-part-one icon-PUlogo')
-            div(class='payu-part-two icon-PUlogob')
-            span Официальный партнер
+    //- section#screen-seventeen(class='block white-block')
+    //-   .svg-section
+    //-     svg(height="600" width="270")
+    //-       line(x1="270" y1="0" x2="0" y2="600")
+    //-     svg(height="600" width="270")
+    //-       line(x1="270" y1="0" x2="0" y2="600")
+    //-   .block-inner
+    //-     h2 Чуть не забыли сказать
+    //-     p
+    //-       | Официальный партнер мероприятия, компания PayU, предоставила подарки для розыгрыша среди гостей мероприятия. 
+    //-     .devices
+    //-     h2.devices-title Розыгрыш iPad mini <br> и 2 iPod shuffle
+    //-     .partners
+    //-       div(class="partner-logo logo-1")
+    //-         div(class='logo-part-one icon-logo-1')
+    //-         div(class='logo-part-two icon-logo-2')
+    //-       div(class="partner-logo logo-2")
+    //-         div(class='payu-part-one icon-PUlogo')
+    //-         div(class='payu-part-two icon-PUlogob')
+    //-         span Официальный партнер
 
 
-    section#screen-eighteen(class='block blue-block registration-screen')
-      .svg-section
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-        svg(height="600" width="270")
-          line(x1="270" y1="0" x2="0" y2="600")
-        svg(height="6000" width="2700")
-          line(x1="2700" y1="0" x2="0" y2="6000")
-      .block-inner
-        div(id="registration_form" class="form-block")
-          h2 Регистрация
-          | <script defer="defer" data-timepad-widget-v2="event_register" data-timepad-customized="3231" src="//timepad.ru/js/tpwf/loader/min/loader.js">(function(){return {"event":{"id":"119992","org":"22951","subdomain":"praktikaclub"}}; })();</script>
+    section#screen-eighteen(class='block black-block registration-screen')
+      .block-color
+        .svg-section
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
+          svg(height="6000" width="2700")
+            line(x1="2700" y1="0" x2="0" y2="6000")
+        .block-inner
+          div(id="registration_form" class="form-block")
+            h2 Регистрация
+            | <script defer="defer" data-timepad-widget-v2="event_register" data-timepad-customized="3231" src="//timepad.ru/js/tpwf/loader/min/loader.js">(function(){return {"event":{"id":"119992","org":"22951","subdomain":"praktikaclub"}}; })();</script>
 
 
     section#screen-nineteen(class='block white-block')
@@ -847,7 +896,7 @@ html
           | Остались вопросы? Воспользуйтесь формой «Связаться с организатором» или позвоните нам по телефону <br> +7 (495) 726-09-39. Мы будем рады ответить на все интересующие вас вопросы по мероприятию. <br><br> Да прибудет с вами высокая конверсия и полная корзина заказов! <br> До встречи на мероприятии!
 
 
-    section#screen-twenty(class='block blue-block')
+    section#screen-twenty(class='block black-block')
       .block-color
         .svg-section
           svg(height="600" width="270")
@@ -856,7 +905,7 @@ html
             line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
           h2
-            | Для участия в розыгрыше iPad Mini <br> и двух iPod Shuffle просто напишите ниже <br> в комментариях следующее:
+            | Чуть не забыли сказать
           .message
             .icon-quote-top
             .icon-quote-bottom
@@ -878,4 +927,4 @@ html
               | ИП Преображенский Борис Александрович <br> Юр. Адрес: 123060, г. Москва, ул. Маршала Соколовского, д2. кв.23 <br> ИНН 773474333368 <br> АКБ "БНКВ" (ЗАО) в г. Москве
 
     //- Google Analytics
-    | <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-51649845-1', 'praktikadays.ru');ga('send', 'pageview');</script>
+    //- | <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-51649845-1', 'praktikadays.ru');ga('send', 'pageview');</script>

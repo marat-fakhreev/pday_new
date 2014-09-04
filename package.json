@@ -16,6 +16,7 @@
     "grunt-notify": "~0.2.18",
     "load-grunt-config": "~0.7.1",
     "autoprefixer-stylus": "~0.1.0",
-    "http-rewrite-middleware": "^0.1.5"
+    "http-rewrite-middleware": "^0.1.5",
+    "jeet": "~5.3.0"
   }
 }

@@ -1,7 +1,7 @@
-$blueColor = #073f5a
-$blueLightColor = #329ccf
+$greyDarkColor = #3b3b3b
+$redLightColor = #f2333a
 $greyColor = #878787
-$greyFontColor = #3b3b3b
+$greyDarkColor = #3b3b3b
 
 html
   margin: 0px auto
@@ -26,6 +26,9 @@ body
     color: inherit
     text-decoration: none
 
+*.red-selection
+  color: $redLightColor
+
 .block
   width: 100%
   position: relative
@@ -34,16 +37,16 @@ body
   background-repeat: no-repeat
   background-position: center center
 
-  &.blue-block
+  &.black-block
     color: #fff
 
   &.white-block
-    color: #073f5a
+    color: $greyDarkColor
 
   .block-color
     width: 100%
     height: 100%
-    background-color: rgba(#319bce, 0.9)
+    background-color: rgba(#333, 0.8)
 
   .block-inner
     width: 960px
