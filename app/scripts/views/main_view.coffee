@@ -24,6 +24,9 @@ class App.Views.MainView
       scrollButton: $('.scroll-button')
       scrollScreen: $('.scroll-screen')
       presentersButton: $('.presenters-button')
+      presentersScreen: $('.presenters-screen')
+      mapButton: $('.map-button')
+      mapScreen: $('.map-screen')
       aboutButton: $('.about-button')
       aboutScreen: $('.about-screen')
       popupButton: $('.pop-up-button')
@@ -35,16 +38,20 @@ class App.Views.MainView
       reviewListItem: $('#review_list li')
       daysCount: $('.days-count')
       photoalbum: $('#photoalbum')
+      photo: $('.photo')
+      img: $('.photo img')
 
   events: ->
     @ui.regButton.on 'click', (=> @moveToElement(@ui.regScreen, 150))
     @ui.aboutButton.on 'click', (=> @moveToElement(@ui.aboutScreen, 0))
-    @ui.presentersButton.on 'click', (=> @moveToElement(@ui.aboutScreen, 1000))
+    @ui.presentersButton.on 'click', (=> @moveToElement(@ui.presentersScreen, 0))
     @ui.scrollButton.on 'click', (=> @moveToElement(@ui.scrollScreen, 0))
+    @ui.mapButton.on 'click', (=> @moveToElement(@ui.mapScreen, 0))
     @ui.reviewShowButton.on 'click', @showReviews
     @ui.popupForm.on 'submit', @submitForm
     @ui.popupButton.on 'click', @showPopUp
     @ui.closeButton.on 'click', @closePopUp
+    @ui.img.on 'hover', @onHoverImg
 
   moveToElement: (element, height) ->
     @ui.body.animate(scrollTop: @_getFromTop(element, height), MOVING_DURATION, 'easeInOutCirc')
@@ -91,6 +98,9 @@ class App.Views.MainView
     else
       alert('Пожалуйста заполните все поля!')
 
+  onHoverImg: ->
+    alert '1'
+
   _getFromTop: (element, height) ->
     element.offset().top + height
 
@@ -125,8 +135,31 @@ class App.Views.MainView
     @ui.reviewList.height(SHORT_HEIGHT)
 
   _initPhotoalbum: ->
+    @ui.photo.each ->
+      $(@).prepend(
+        """
+          <div class=p-box>
+            <p>
+              Отмечайте себя и смотрите<br>комментарии ко всем фотографиям<br>в нашем альбоме в Facebook
+            </p>
+            <div class=button>Посмотреть все фото</div>
+          </div>
+        """
+      )
+
+    @ui.photoBox = $('.p-box')
+
     @ui.photoalbum.imagesReady =>
+      shift = 0
       @ui.photoalbum.smoothTouchScroll()
+
+      @ui.photoBox.each ->
+        self = $(@)
+        width = self.parent().find('img').width()
+        self.css
+          width: width
+          left: shift
+        shift += width
 
   _detectBrowser: ->
     if $.browser.mozilla

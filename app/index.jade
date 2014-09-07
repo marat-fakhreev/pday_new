@@ -88,15 +88,15 @@ html
                 li
                   a(class="presenters-button") Выступающие
                 li
-                  a(href="#") Место проведения
+                  a(class="map-button") Место проведения
                 li
                   a(class="about-button") О Нас
                 li
                   a(href="/partners.html") Партнеры
                 li
-                  a(class="presenters-button") Блог
+                  a(href="#") Блог
                 li
-                  a(class="about-button") Отзывы
+                  a(href="/reviews.html") Отзывы
           .container
             h2
               | Главное практическое<br><span class='white-selection'>мероприятие</span><br>по интернет-торговле
@@ -245,7 +245,7 @@ html
                 | В разное время Борис являлся создателем, владельцем или совладельцем компаний: ForOffice.ru — крупнейшего поставщика печатного и полиграфического оборудования, Швейные Технологии SewTech.ru, Mir-Karcher.ru — крупнейшего интернет-магазина оборудования Karcher, Лайф Кафе, производства пиломатериалов Лесорубка.ру, типографии ZiPrint, интернет-магазина Genergy.ru, сервисной компании Воздушник, онлайн b2b-портала Rusmarket.ru, крупнейшего московского свадебного салона, рекламного агентства Новые Линии Продвижения, поставщика печатного 3D оборудования 3dplotter.ru, многих других различных интернет-магазинов и онлайн-проектов
 
 
-    section#screen-eight(class='block white-block about-screen')
+    section#screen-eight(class='block white-block presenters-screen')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
@@ -552,62 +552,48 @@ html
       .block-inner
         h2
           | Фотографии с прошлого <span class='red-selection'>Практика Days</span>
-      #photoalbum.photoalbum
-        .photo
-          .p-box
-          img(src='../images/photo/1.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/2.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/3.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/4.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/5.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/6.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/7.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/8.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/9.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/10.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/11.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/12.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/13.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/14.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/15.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/16.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/17.jpg')
-        .photo
-          .p-box
-          img(src='../images/photo/18.jpg')
-
+      .album-container
+        #photoalbum.photoalbum
+          .photo
+            img(src='../images/photo/1.jpg')
+          .photo
+            img(src='../images/photo/2.jpg')
+          .photo
+            img(src='../images/photo/3.jpg')
+          .photo
+            img(src='../images/photo/4.jpg')
+          .photo
+            img(src='../images/photo/5.jpg')
+          .photo
+            img(src='../images/photo/6.jpg')
+          .photo
+            img(src='../images/photo/7.jpg')
+          .photo
+            img(src='../images/photo/8.jpg')
+          .photo
+            img(src='../images/photo/9.jpg')
+          .photo
+            img(src='../images/photo/10.jpg')
+          .photo
+            img(src='../images/photo/11.jpg')
+          .photo
+            img(src='../images/photo/12.jpg')
+          .photo
+            img(src='../images/photo/13.jpg')
+          .photo
+            img(src='../images/photo/14.jpg')
+          .photo
+            img(src='../images/photo/15.jpg')
+          .photo
+            img(src='../images/photo/16.jpg')
+          .photo
+            img(src='../images/photo/17.jpg')
+          .photo
+            img(src='../images/photo/18.jpg')
+        .link-to-photoalbum
+          h3
+            | Не нашли себя?
+          div(class="button button-dark reg-button") Посмотреть все фото
 
     section#screen-thirteen(class='block black-block')
       .block-color
@@ -734,7 +720,7 @@ html
               .button.button-light#show_list_button Посмотреть все отзывы
 
 
-    section#screen-fourteen(class='block white-block')
+    section#screen-fourteen(class='block white-block map-screen')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
@@ -831,10 +817,11 @@ html
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
       .block-inner
-        h2 Остались вопросы?
-        div(class="button pop-up-button" id="call_button") Связаться с организатором
+        h2
+          | Остались <span class='red-selection'>вопросы?</span>
+        div(class="button pop-up-button button-dark" id="call_button") Связаться с организатором
         p
-          | Остались вопросы? Воспользуйтесь формой «Связаться с организатором» или позвоните нам по телефону <br> +7 (495) 726-09-39. Мы будем рады ответить на все интересующие вас вопросы по мероприятию. <br><br> Да прибудет с вами высокая конверсия и полная корзина заказов! <br> До встречи на мероприятии!
+          | Остались вопросы? Воспользуйтесь формой «<b>Связаться с организатором</b>» или позвоните нам по телефону <br><b>+7 (495) 726-09-39.</b> Мы будем рады ответить на все интересующие вас вопросы по мероприятию. <br><br> Да прибудет с вами высокая конверсия и полная корзина заказов! <br> До встречи на мероприятии!
 
 
     section#screen-twenty(class='block black-block')
@@ -847,11 +834,13 @@ html
         .block-inner
           h2
             | Чуть не забыли сказать
+          p
+            | Все участники ПрактикаDays получат презентации выступающих  совершенно бесплатно. При чем как с прошлых мероприятий так и с нового* <br><br>Для того чтобы получить презентации выступающих просто напишите в комментариях следующее:
           .message
             .icon-quote-top
             .icon-quote-bottom
             p
-              | Ставлю себе напоминание, что иду на главное практическое мероприятие по <br> интернет-торговле "ПрактикаDays", которое пройдет 21 июня. Да прибудет с нами <br> высокая конверсия. <a target="_blank" href="http://praktikaclub.timepad.ru/event/103158/">http://praktikaclub.timepad.ru/event/103158/</a>
+              | Ставлю себе напоминание, что иду на главное практическое мероприятие по интернет-торговле "ПрактикаDays", которое пройдет 4 октября. Да прибудет с нами высокая конверсия. www.praktikadays.ru
           .social-comment-block
             //- vk module
             div.vk
