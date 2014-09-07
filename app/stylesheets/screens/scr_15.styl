@@ -1,9 +1,10 @@
 #screen-fiveteen
   .box
-    margin: 20px 0 20px 0
-    padding: 30px 240px
-    border-color: $redLightColor
-    height: auto
+    margin: 50px 0
+    padding: 40px 240px
+    border: 2px solid $redLightColor
+    border-radius: 75px
+    box-sizing: border-box
 
     .title
       &::after
@@ -13,73 +14,40 @@
 
     h2
       float: left
+      color: $redLightColor
+      font-weight: 400
 
     span
       float: left
       position: relative
-      top: 35px
-      font-size: 24px
-      margin-right: 30px
+      top: 33px
+      font-size: 17px
+      margin-right: 20px
 
     .button
+      float: left
+      width: 260px
+      margin: 8px
       position: relative
-      top: 10px
-      height: 50px
-      width: 240px
-      line-height: 50px
+      top: 5px
 
   p
     &.center
       margin: 20px 0 70px 0
 
-  ul.grid
-    margin: 15px 0 0 0
+  .grid
+    margin: 50px 110px 0 110px
+    clearfix()
 
-    &::after
-      content: ''
-      display: block
-      clear: both
+  .column
+    col(1/2)
 
-    li
-      box-sizing: border-box
-      width: 50%
-      float: left
-      padding: 0 40px
-      margin: 0 0 40px 0
-      height: 55px
+    ul
+      width: 100%
+      height: 100%
 
-      &:nth-child(1)
-        div
-          top: -40px
-      &:nth-child(2)
-        div
-          top: -40px
-      &:nth-child(3)
-        div
-          top: -40px
-      &:nth-child(4)
-        div
-          top: -20px
-      &:nth-child(5)
-        div
-          top: -20px
-      &:nth-child(6)
-        div
-          top: -80px
-          font-size: 80px
-
-      &:nth-child(1)
-      &:nth-child(2)
-      &:nth-child(4)
-      &:nth-child(5)
-        p
-          height: 100%
-          line-height: 55px
-
-      &:nth-child(4)
-      &:nth-child(5)
-        div
-          line-height: 85px
+      li
+        height: 90px
 
       div
         margin: 0 10px 0 0
@@ -91,6 +59,38 @@
         font-size: 50px
         color: $redLightColor
         position: relative
+
+  .left-column
+    li
+      &:nth-child(1)
+        div
+          top: -40px
+        p
+          height: 100%
+          line-height: 55px
+      &:nth-child(2)
+        div
+          top: -40px
+      &:nth-child(3)
+        div
+          top: -80px
+          font-size: 80px
+
+  .right-column
+    margin: 40px 0
+
+    li
+      &:nth-child(1)
+        div
+          top: -40px
+      &:nth-child(2)
+        div
+          top: -20px
+          line-height: 85px
+
+      p
+        height: 100%
+        line-height: 55px
 
   ul.list
     margin: 0 0 0 20px

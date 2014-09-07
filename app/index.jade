@@ -9,7 +9,6 @@ html
     meta(property="fb:app_id", content="{YOUR_APPLICATION_ID}")
     title Практика Days
     //- fonts
-    //- | <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     | <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     | <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     //- styles
@@ -70,18 +69,13 @@ html
 
     section#screen-one(class='block black-block')
       .block-color
-        .svg-section
-          svg(height="600" width="270")
-            line(x1="270" y1="0" x2="0" y2="600")
-          svg(height="600" width="270")
-            line(x1="270" y1="0" x2="0" y2="600")
-          svg(height="6000" width="2700")
-            line(x1="2700" y1="0" x2="0" y2="6000")
         .block-inner
           header.header
             a(href='/' class='logo')
               div(class='logo-part-one icon-logo-1')
               div(class='logo-part-two icon-logo-2')
+            .registration-button
+              .button.reg-button Регистрация
             ul.social
               li
                 a(href="http://instagram.com/internetpraktika" target="_blank" class="inst icon-insta")
@@ -94,33 +88,53 @@ html
                 li
                   a(class="presenters-button") Выступающие
                 li
-                  a(href="/partners.html") Партнеры
+                  a(href="#") Место проведения
                 li
                   a(class="about-button") О Нас
-          .box
-            h1
-              | Главное практическое мероприятие по интернет-торговле
-            h3
-              | 21 июня 2014 года 15 предпринимателей расскажут о том, как они создавали и развивали свои интернет-магазины, о своих успехах и провалах, поделятся практическим опытом, секретами и фишками онлайн-торговли.
+                li
+                  a(href="/partners.html") Партнеры
+                li
+                  a(class="presenters-button") Блог
+                li
+                  a(class="about-button") Отзывы
+          .container
+            h2
+              | Главное практическое<br><span class='white-selection'>мероприятие</span><br>по интернет-торговле
+            p
+              | 4 октября 2014 года уже в третий раз пройдет ПрактикаDays, культовое мероприятие, на котором каждый раз новые 15 владельцев интернет-магазинов рассказывают о том, как они создавали и развивали свои еинтернет-магазины, о своих успехах и провалах, делятся практическим опытом, секретами и фишками онлайн-торговли.
             ul
+              li.active
+                .line-one
+                  span В рамках
+                  .partner
+                .line-two
+                  .box
+                    .b-title
+                      h2.day 23
+                      p Дня до начала мероприятия в Москве
+                    .b-reg
+                      .button Регистрация участников
               li
-                span.desc До начала осталось:
-                div.days-count
-                  span.count
-                  p
+                .line-one
+                  span Для справок
+                  .tel +7 (495) 726-09-39
+                .line-two
+                  .box
+                    .b-title
+                      h2.day __
+                      p Дня до начала мероприятия в СПб
+                    .b-reg
+                      .button Регистрация участников
               li
-                span.desc Генеральный партнер:
-                .payu
-                  div(class='payu-part-one icon-PUlogo')
-                  div(class='payu-part-two icon-PUlogob')
-              li
-                span.desc Телефон для справок:
-                div
-                  span.count +7 (495) 726-09-39
-            div(class="button-light reg-button") Регистрация
-          .scroll-button
-            span Прокрутите вниз
-            .icon-scroll
+                .line-one
+                  span Расскажи друзьям
+                .line-two
+                  .box
+                    .b-title
+                      h2.day __
+                      p Дня до начала мероприятия в Казани
+                    .b-reg
+                      .button Регистрация участников
 
 
     section#screen-two(class='block black-block scroll-screen')
@@ -201,7 +215,7 @@ html
             line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
           h2
-            | Организаторы и ведущие мероприятия
+            | <span class='white-selection'>Организаторы</span> и ведущие мероприятия
           ul.org-column
             li
               .photo-circle
@@ -231,7 +245,7 @@ html
                 | В разное время Борис являлся создателем, владельцем или совладельцем компаний: ForOffice.ru — крупнейшего поставщика печатного и полиграфического оборудования, Швейные Технологии SewTech.ru, Mir-Karcher.ru — крупнейшего интернет-магазина оборудования Karcher, Лайф Кафе, производства пиломатериалов Лесорубка.ру, типографии ZiPrint, интернет-магазина Genergy.ru, сервисной компании Воздушник, онлайн b2b-портала Rusmarket.ru, крупнейшего московского свадебного салона, рекламного агентства Новые Линии Продвижения, поставщика печатного 3D оборудования 3dplotter.ru, многих других различных интернет-магазинов и онлайн-проектов
 
 
-    section#screen-seven(class='block white-block about-screen')
+    section#screen-eight(class='block white-block about-screen')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
@@ -438,7 +452,7 @@ html
       .block-inner
         h3
           | Я уже готов пойти
-        div(class="button-light reg-button") Регистрация
+        div(class="button button-dark reg-button") Регистрация участников
 
 
     section#screen-four(class='block black-block')
@@ -448,7 +462,7 @@ html
             line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
           h2
-            | Вы узнаете о разных путях <br>15 интернет — предпринимателей:
+            | Вы узнаете о <span class='white-selection'>разных путях</span><br>15 интернет — предпринимателей:
           ul
             li
               .circle
@@ -505,49 +519,6 @@ html
               | Всем сотрудникам интернет-магазинов, кто хочет расти, расширять свой кругозор и учиться на чужом опыте. 
 
 
-    //- section#screen-eight(class='block black-block')
-    //-   .svg-section
-    //-     svg(height="600" width="270")
-    //-       line(x1="270" y1="0" x2="0" y2="600")
-    //-     svg(height="600" width="270")
-    //-       line(x1="270" y1="0" x2="0" y2="600")
-    //-   .block-color
-    //-     .block-inner
-    //-       h3
-    //-         | Конечно иду!
-    //-       div(class="button-light reg-button") Регистрация
-
-
-    //- section#screen-nine(class='block white-block')
-    //-   .block-inner
-    //-     h2
-    //-       | Партнеры мероприятия
-    //-     ul
-    //-       li
-    //-         a(href="http://payu.ru/" target="blank")
-    //-           .partner
-    //-           span PayU
-    //-       li
-    //-         a(href="http://retailrocket.ru/" target="blank")
-    //-           .partner
-    //-           span Retail Rocket
-    //-       li
-    //-         a(href="http://www.insales.ru/" target="blank")
-    //-           .partner
-    //-           span InSales
-    //-       li
-    //-         a(href="http://www.sociomantic.ru/" target="blank")
-    //-           .partner
-    //-           span Sociomantic
-    //-       li
-    //-         a(href="http://shop-logistics.ru/" target="blank")
-    //-           .partner
-    //-           span Shoplogistic
-    //-     .button-block
-    //-       a(class="button pop-up-button" id="partner_button") Cтать партнером
-    //-       a(class="button" href="/partners.html") Все партнеры
-
-
     section#screen-eleven(class='block black-block')
       .block-color
         .svg-section
@@ -557,7 +528,7 @@ html
             line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
           h2
-            | Всего за 1 день
+            | Всего за <span class='white-selection'>1 день</span>
           .banner-block
             .clock
               .icon-clock-in
@@ -582,24 +553,60 @@ html
         h2
           | Фотографии с прошлого <span class='red-selection'>Практика Days</span>
       #photoalbum.photoalbum
-        img(src='../images/photo/1.jpg')
-        img(src='../images/photo/2.jpg')
-        img(src='../images/photo/3.jpg')
-        img(src='../images/photo/4.jpg')
-        img(src='../images/photo/5.jpg')
-        img(src='../images/photo/6.jpg')
-        img(src='../images/photo/7.jpg')
-        img(src='../images/photo/8.jpg')
-        img(src='../images/photo/9.jpg')
-        img(src='../images/photo/10.jpg')
-        img(src='../images/photo/11.jpg')
-        img(src='../images/photo/12.jpg')
-        img(src='../images/photo/13.jpg')
-        img(src='../images/photo/14.jpg')
-        img(src='../images/photo/15.jpg')
-        img(src='../images/photo/16.jpg')
-        img(src='../images/photo/17.jpg')
-        img(src='../images/photo/18.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/1.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/2.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/3.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/4.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/5.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/6.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/7.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/8.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/9.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/10.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/11.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/12.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/13.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/14.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/15.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/16.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/17.jpg')
+        .photo
+          .p-box
+          img(src='../images/photo/18.jpg')
 
 
     section#screen-thirteen(class='block black-block')
@@ -613,7 +620,7 @@ html
             line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
           h2
-            | Что говорят о прошлых мероприятиях
+            | Что говорят о прошлых <span class='white-selection'>мероприятиях</span>
           .reviews
             ul#review_list
               li
@@ -724,7 +731,7 @@ html
                 .review-author
                   a(target="_blank" href="") Светлана П
             .expander
-              .button#show_list_button Раскрыть все отзывы
+              .button.button-light#show_list_button Посмотреть все отзывы
 
 
     section#screen-fourteen(class='block white-block')
@@ -767,105 +774,39 @@ html
           line(x1="270" y1="0" x2="0" y2="600")
       .block-inner
         h2
-          | Стоимость участия <br> в мероприятии в Москве
+          | Стоимость участия в мероприятии <br> в <span class='red-selection'>Москве</span>
         .box
           .title
             h2 4900
             span руб
-            div(class="reg-button button") Зарегистрироваться
+            div(class="reg-button button button-dark") Регистрация участников
         p
-          | В стоимость участия в Москве входит:
-        ul.grid
-          li
-            div(class="icon icon-icon-5")
-            p Участие в мероприятии
-          li
-            div(class="icon icon-icon-6")
-            p 2 кофе-брейка и полноценный обед
-          li
-            div(class="icon icon-icon-7")
-            p Возможность задать вопросы выступающим
-          li
-            div(class="icon icon-icon-8")
-            p Общение в кулуарах
-          li
-            div(class="icon icon-icon-9")
-            p Розыгрыш подарков от PayU
-          li
-            div(class="icon icon-icon-4")
-            p Возможность наладить полезные деловые связи
+          | Регистрация и резервирование мест на семинар осуществляется по факту поступления оплаты.<br>В стоимость участия в Москве входит:
+        .grid
+          .column.left-column
+            ul
+              li
+                div(class="icon icon-icon-5")
+                p Участие в мероприятии
+              li
+                div(class="icon icon-icon-7")
+                p Возможность задать вопросы выступающим
+              li
+                div(class="icon icon-icon-4")
+                p Возможность наладить полезные деловые связи
+          .column.right-column
+            ul
+              li
+                div(class="icon icon-icon-6")
+                p 2 кофе-брейка и полноценный обед
+
+              li
+                div(class="icon icon-icon-8")
+                p Общение в кулуарах
         p.center
           | Ну и конечно же глубокое погружение в атмосферу практики <br> интернет-торговли на целый день
         p
-          | В перерывах вы сможете лично пообщаться со всеми участниками мероприятия, задать им вопросы, которые остались за бортом выступления, спросить совет по своему проекту. <br><br> Также возможно онлайн-участие для регионов, для тех, кто не сможет вживую посетить главное практическое мероприятие по интернет-торговле. <br><br> После заполнения регистрационной формы вам будут доступны следующие способы оплаты:
-        ul.list
-          li
-            p банковские карты
-          li
-            p электронные деньги
-          li
-            p платежные терминалы
-          li
-            p салоны связи Евросеть и Связной
-          li
-            p мобильный платеж
-          li
-            p безналичная оплата от компании
-
-
-    //- section#screen-sixteen(class='block black-block')
-    //-   .svg-section
-    //-     svg(height="600" width="270")
-    //-       line(x1="270" y1="0" x2="0" y2="600")
-    //-     svg(height="600" width="270")
-    //-       line(x1="270" y1="0" x2="0" y2="600")
-    //-   .block-color
-    //-     .block-inner
-    //-       h2
-    //-         | Стоимость онлайн участия <br> в мероприятии:
-    //-       .box
-    //-         .title
-    //-           h2 2900
-    //-           span руб
-    //-           div(class="reg-button button") Зарегистрироваться
-    //-         .text
-    //-           | После оплаты вам будет отправлен код для просмотра онлайн - трансляции
-    //-       p После заполнения регистрационной формы вам будут доступны следующие способы оплаты:
-    //-       ul.list
-    //-         li
-    //-           p банковские карты
-    //-         li
-    //-           p электронные деньги
-    //-         li
-    //-           p платежные терминалы
-    //-         li
-    //-           p салоны связи Евросеть и Связной
-    //-         li
-    //-           p мобильный платеж
-    //-         li
-    //-           p безналичная оплата от компании
-
-
-    //- section#screen-seventeen(class='block white-block')
-    //-   .svg-section
-    //-     svg(height="600" width="270")
-    //-       line(x1="270" y1="0" x2="0" y2="600")
-    //-     svg(height="600" width="270")
-    //-       line(x1="270" y1="0" x2="0" y2="600")
-    //-   .block-inner
-    //-     h2 Чуть не забыли сказать
-    //-     p
-    //-       | Официальный партнер мероприятия, компания PayU, предоставила подарки для розыгрыша среди гостей мероприятия. 
-    //-     .devices
-    //-     h2.devices-title Розыгрыш iPad mini <br> и 2 iPod shuffle
-    //-     .partners
-    //-       div(class="partner-logo logo-1")
-    //-         div(class='logo-part-one icon-logo-1')
-    //-         div(class='logo-part-two icon-logo-2')
-    //-       div(class="partner-logo logo-2")
-    //-         div(class='payu-part-one icon-PUlogo')
-    //-         div(class='payu-part-two icon-PUlogob')
-    //-         span Официальный партнер
+          | В перерывах вы сможете лично пообщаться со всеми участниками мероприятия, задать им вопросы, которые остались за бортом выступления, спросить совет по своему проекту.
 
 
     section#screen-eighteen(class='block black-block registration-screen')

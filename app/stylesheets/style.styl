@@ -11,7 +11,7 @@ body
   width: 100%
   heigth: auto
   background-color: #fff
-  font-family: 'PT Sans Narrow', sans-serif
+  font-family: $fontOne, sans-serif
   overflow: auto
 
   &.fixed
@@ -28,6 +28,11 @@ body
 
 *.red-selection
   color: $redLightColor
+  font-size: inherit
+
+*.white-selection
+  font-weight: 400
+  font-size: inherit
 
 .block
   width: 100%
@@ -49,11 +54,11 @@ body
     background-color: rgba(#333, 0.8)
 
   .block-inner
-    width: 960px
+    width: 1024px
     height: 100%
     margin: 0 auto
     box-sizing: border-box
-    padding: 105px 0 80px 0
+    padding: 100px 0 90px 0
     position: relative
     z-index: 50
 
@@ -63,9 +68,7 @@ body
       display: block
       clear: both
 
-  .box
+  .container
     width: 100%
-    height: 550px
     box-sizing: border-box
-    border: 4px solid #fff
-    padding: 70px 100px 0 100px
+    padding: 90px 0
