@@ -4,7 +4,7 @@ class App.Views.MainView
   HEIGHT = 0
   SHORT_HEIGHT = 0
   MARGIN_BOTTOM = 40
-  DATE = [2014, 5, 21]
+  DATE = [2014, 10, 4]
 
   constructor: ->
     @initUi()
@@ -51,7 +51,6 @@ class App.Views.MainView
     @ui.popupForm.on 'submit', @submitForm
     @ui.popupButton.on 'click', @showPopUp
     @ui.closeButton.on 'click', @closePopUp
-    @ui.img.on 'hover', @onHoverImg
 
   moveToElement: (element, height) ->
     @ui.body.animate(scrollTop: @_getFromTop(element, height), MOVING_DURATION, 'easeInOutCirc')
@@ -98,9 +97,6 @@ class App.Views.MainView
     else
       alert('Пожалуйста заполните все поля!')
 
-  onHoverImg: ->
-    alert '1'
-
   _getFromTop: (element, height) ->
     element.offset().top + height
 
@@ -112,17 +108,17 @@ class App.Views.MainView
 
     if daysCount <= 0
       daysCount = 0
-      text = 'дней'
+      text = 'Дней'
     else
       if lastChar is '1'
-        text = 'день'
+        text = 'День'
       else if lastChar is '2' or lastChar is '3' or lastChar is '4'
-        text = 'дня'
+        text = 'Дня'
       else
-        text = 'дней'
+        text = 'Дней'
 
-    @ui.daysCount.find('span').html(daysCount)
-    @ui.daysCount.find('p').html(text)
+    @ui.daysCount.find('.day').html(daysCount)
+    @ui.daysCount.find('.day-text').html(text)
 
   _initReviewList: ->
     itter = 1
@@ -142,7 +138,10 @@ class App.Views.MainView
             <p>
               Отмечайте себя и смотрите<br>комментарии ко всем фотографиям<br>в нашем альбоме в Facebook
             </p>
-            <div class=button>Посмотреть все фото</div>
+            <div class=button>
+              Посмотреть все фото
+              <i class="fa fa-arrow-right"></i>
+            </div>
           </div>
         """
       )

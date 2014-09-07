@@ -1,0 +1,249 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=0.3')
+    meta(property="fb:admins", content="1695571811")
+    meta(property="fb:app_id", content="{YOUR_APPLICATION_ID}")
+    title Практика Days
+    //- fonts
+    | <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    | <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    //- styles
+    | <link rel="stylesheet" href="/stylesheets/fontcustom.css">
+    | <link rel="stylesheet" href="/stylesheets/style.css">
+    //- libraries
+    | <script type='text/javascript' src='/scripts/libs/jquery-2.1.1.min.js'></script>
+    | <script type='text/javascript' src='/scripts/libs/jquery.browser.min.js'></script>
+    | <script type='text/javascript' src='/scripts/libs/jquery-ui-1.10.3.custom.min.js'></script>
+    | <script type='text/javascript' src='/scripts/libs/jquery.kinetic.min.js'></script>
+    | <script type='text/javascript' src='/scripts/libs/jquery.smoothTouchScroll.min.js'></script>
+    | <script type='text/javascript' src='/scripts/libs/jquery.images-ready.js'></script>
+    | <script type='text/javascript' src='/scripts/libs/jquery.easing.1.3.js'></script>
+    | <script type='text/javascript' src='/scripts/libs/moment.min.js'></script>
+    //- additional scripts
+    | <script src="//vk.com/js/api/openapi.js" type="text/javascript" charset="windows-1251"></script>
+    | <script type="text/javascript">VK.init({apiId: 4373980, onlyWidgets: true});</script>
+    //- app scripts
+    | <script type='text/javascript' src='/scripts/app.js'></script>
+    | <script type='text/javascript' src='/scripts/models/form.js'></script>
+    | <script type='text/javascript' src='/scripts/views/main_view.js'></script>
+
+  body
+    | <div id="fb-root"></div>
+    | <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+    section#screen-one(class='block black-block second-page')
+      .block-color
+        .block-inner
+          header.header
+            a(href='/' class='logo')
+              div(class='logo-part-one icon-logo-1')
+              div(class='logo-part-two icon-logo-2')
+            .registration-button
+              .button.reg-button Регистрация
+            ul.social
+              li
+                a(href="http://instagram.com/internetpraktika" target="_blank" class="inst icon-insta")
+              li
+                a(href="https://vk.com/public71012625" target="_blank" class="vk icon-vk")
+              li
+                a(href="https://www.facebook.com/praktikadays?ref=hl" target="_blank" class="fb icon-fb")
+            nav
+              ul
+                li
+                  a(class="presenters-button") Выступающие
+                li
+                  a(class="map-button") Место проведения
+                li
+                  a(class="about-button") О Нас
+                li
+                  a(href="/partners.html") Партнеры
+                li
+                  a(href="#") Блог
+                li
+                  a(href="/reviews.html") Отзывы
+
+    section#screen-thirteen(class='block white-block')
+      .svg-section
+        svg(height="600" width="270")
+          line(x1="270" y1="0" x2="0" y2="600")
+        svg(height="6000" width="2700")
+          line(x1="2700" y1="0" x2="0" y2="6000")
+        svg(height="600" width="270")
+          line(x1="270" y1="0" x2="0" y2="600")
+      .block-inner
+        h2
+          | Что говорят о прошлых <span class='white-selection'>мероприятиях</span>
+        .reviews
+          ul#review_list
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | Спасибо за мероприятие! Практика Days стала первой возможностью в этом году пообщаться с коллегами по цеху. Отмечу очень дружную атмосферу, никакого пафоса крупных отраслевых мероприятий. В то же время – никаких "профессиональных спикеров", только предприниматели, которые делились реальным опытом (не всегда успешным, что даже более ценно). Формат очень понравился, обязательно буду в следующий раз!
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/nikolay.khlebinsky?ref=ts&fref=ts") Николай Хлебинский
+                span RetailRocket
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | "ПрактикаDays - образовательное мероприятие, которое немного отличается от стандартных конференций. Если честно, вот такого формата консультаций очень не хватало когда мы только запускались. Думаю слушателям было полезно, а открытый и свободный формат (почти все выступали без презентаций) сделали доклады более живыми и насыщенными. Еще отметил для себя, что разные выступления закрыли целый спектр вопросов по разным сферам e-commerce, от насущных проблем интернет магазинщиков, до поиска и привлечения инвестиций. Я сам унес с конференции пару интересных схем в блокноте для идей и искренне порадовался за некоторые проекты от которых были доклады! Если вам интересно познакомиться лично с весьма интересными людьми, получить свежие идеи и ответить на насущные вопросы - цена участия не столь велика!"
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/chupin.anton?fref=ts") Антон Чупин
+                span Udivishop.ru
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | Мероприятие от Бориса и Давлета - тот волшебный пендель, который может получить любой сомневающийся в вопросе "открыть или не открыть свой ИМ". Простые люди, такие же как и все, делятся своей болью и радостью создания магазина. Очень рекомендую к посещению!
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/andrey.khvostov?fref=ts") Андрей Хворостов
+                span Appak.ru
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | Для меня «Практика» была не только интересной, но и результативной. Насыщенная программа, заинтересованная аудитория, отличная организация, все это оставило положительные впечатления. На мероприятии нашел для себя уйму нужной информации из реальных кейсов владельцев интернет-магазинов. Кроме этого, удалось наладить полезные деловые связи с сеошниками, маркетологами, дизайнерами и другими стоящими людьми, которые уже дали несколько дельных советов по моему магазину. Уверен, что потенциал развития у «Практике» просто огромный. Любому, кто хочет заняться интернет-торговлей определенно стоит прийти и послушать мотивирующие истории «зрелых» магазинщиков. Ни капли не жалею, что стал участником такого мероприятия!
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/apochechun?fref=ts") Андрей Почечун
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | "Спасибо большое Борис Преображенский и Давлет Сулейманов за чудесное мероприятие, которое помогло расставить точки над ""и"" по нескольким вопросам, ну и за плюшки в прямом и переносном смысле огромное спасибо!!!"
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/gorelovka?fref=ts") Юлия Горелова
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | "Мероприятие на 100% оправдало название - 15 выступлений от практиков с абсолютно разным профилем и опытом. Разобрали почти все нюансы создания и развития интернет-магазинов. Организаторам большой плюс и за атмосферу - было очень комфортно. Это касается и программы, и неформальной обстановки, и кофе-брейков."
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/vvgusev?ref=ts&fref=ts") Владимир Гусев
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | "Новый интересный формат: Только личный практический опыт, никакой теории. Докладчики из различных сфер и с разным опытом. Доклады не только об успехах, но и о неудачах. Вопросы из зала и общение в кулуарах. Мероприятие, однозначно, полезно всем, кто связан с ecommerce."
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/den.kolosov/info") Денис Колосов
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | "Спасибо Борису Преображенскому за ПрактикаDays. На мероприятии услышал истории успеха и неудач реальных интернет-магазинов из первых уст. То, чем обычно делятся в кулуарах, было рассказано для широкой аудитории. Особенно понравилось то, что было рассказано 15 разноплановых историй магазинов в разных тематиках, различных по размеру и уровню развития. Очень рекомендую всем тем, кто только задумывается о создании своего магазина или только начинает свою интернет-торговлю!"
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/chistoborodov?fref=ts") Кирилл Чистобородов
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | ПрактикаDays укладывается в мое представление идеальных конференций. Никакой абстракной теории, только жизненная практика. Обмен опытом с людьми, у которых одинаковые с тобой проблемы. Да еще и вкусно кормят
+              .review-author
+                a(target="_blank" href="") Андрей Сыцко
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | Крутые! отличный концепт мероприятия! супер промо! результат - море "включенных" в тему лиц в зале. В июне быть непременно!
+              .review-author
+                a(target="_blank" href="https://www.facebook.com/mariya.smorchkova?ref=ts&fref=ts") Мария Сморчкова
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | "У меня интернет-магазин, который я сделал на коленке, а первый офис был на кухне. Спустя годы пришла уверенность, что я нужен людям. И вот я в поисках, как поставить свою работу на более серьезный уровень: информативный сайт, сервисы, автоматизация и т.п. Ответы на свои вопросы я получаю из интернета и соответствующих мероприятий. В последний год я упорно посещал все семинары, которые мне попадались. И все чаще оставался осадок после семинаров, что организаторы или участники не дали ответов на вопросы, которые сами же декларировали в анонсе. С большой долей скепсиса я отправился и на ПрактикаDays. Но свершилось чудо! Я побывал на лучшем семинаре. Мне понравилось все: <br>1) Услышать простые истории, в чем-то похожие на мою, было гораздо интереснее, чем слушать про инвестиции в миллионы долларов. На семинаре ""Оборота"" ген. директор ""220 Вольт"" сказал, что если у вас нет $10млн., то вам можно не начинать свой бизнес в сфере DIY. А здесь половина выступающих начинали с нуля и им было что сказать.<br>2) Бывают участники интересные и не очень или совсем скучные. На вашем семинаре все участники были интересные и я ни разу не задремал на протяжении всего дня. Некоторых участников я уже встречал на других мероприятиях, но там их выступления были не такими интересными. ""Правильно заданный вопрос – половина ответа""(с) и организаторы задали выступающим очень правильные вопросы, тезисы. И мне ближе было услышать: ""Мой склад был в багажнике жигулей..."", чем ""У нас было 20млн. и мы открыли 5 филиалов"" как обычно хвастаются российские ""монстры"" e-commerce.<br>3) В последнее время каждый молодой человек или не очень молодой может открыть свой ИМ и многие начинают свой бизнес нуля. Поэтому есть определенный недостаток знаний в этой сфере. Книжки Котлера и Джобса это одно, нужно практическое образование для простых людей с учетом русских реалий. В перерывах к выступающим не возможно было подступиться, вокруг толклись с вопросами: ""А как..?"", ""подскажите..."". К Руслану из BabyBrick вообще не реально было подойти, его окружили, как дети-Банифация и не отпускали, пока не закончилось мероприятие. Мне кажется было бы интересным в будущем оставлять больше времени на вопросы или изменить формат. Вариант круглого стола, где все задают вопросы и все слышат ответы, такой массовый народный консалтинг. И чем больше примеров из обычной жизни, тем лучше.<br>Ложка дегтя: процесс приема пищи был затруднен из-за кол-ва народа. Пирожки с мясом были просто жесть! Но главное: пищи для мозга было предостаточно.<br>Спасибо организаторам и выступающим, все было супер! На будущие семинары обязательно приду!"
+              .review-author
+                a(target="_blank" href="") Владимир
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | "Очень круто было, молодцы. Очень понравился формат и контент мероприятия. Я с собой взял ноут и айпад, чтобы скучные выступления пропускать, но ни разу даже не включил их. И при этом было не напряжно, под конец 16 выступлений даже не устал, все было очень увлекательно. Вынес много полезной информации, очень много опыта, готовых сценариев, подсказок и чужих ошибок. В-общем, понравилось решительно все. Вы крутые!
+              .review-author
+                a(target="_blank" href="") Тимур Мингулов
+            li
+              .review-item
+                .icon-quote-top
+                .icon-quote-bottom
+                p
+                  | "Всё было отлично! Даже не ожидала что так будет круто. С удовольствием пошла бы ещё. Из пожеланий только качество звука, но это уже выше обещали решить."
+              .review-author
+                a(target="_blank" href="") Светлана П
+
+    section#screen-twelve(class='block black-block')
+      .block-color
+        .svg-section
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
+          svg(height="600" width="270")
+            line(x1="270" y1="0" x2="0" y2="600")
+        .block-inner
+          h2
+            | Фотографии с прошлого <span class='red-selection'>Практика Days</span>
+        .album-container
+          #photoalbum.photoalbum
+            .photo
+              img(src='../images/photo/1.jpg')
+            .photo
+              img(src='../images/photo/2.jpg')
+            .photo
+              img(src='../images/photo/3.jpg')
+            .photo
+              img(src='../images/photo/4.jpg')
+            .photo
+              img(src='../images/photo/5.jpg')
+            .photo
+              img(src='../images/photo/6.jpg')
+            .photo
+              img(src='../images/photo/7.jpg')
+            .photo
+              img(src='../images/photo/8.jpg')
+            .photo
+              img(src='../images/photo/9.jpg')
+            .photo
+              img(src='../images/photo/10.jpg')
+            .photo
+              img(src='../images/photo/11.jpg')
+            .photo
+              img(src='../images/photo/12.jpg')
+            .photo
+              img(src='../images/photo/13.jpg')
+            .photo
+              img(src='../images/photo/14.jpg')
+            .photo
+              img(src='../images/photo/15.jpg')
+            .photo
+              img(src='../images/photo/16.jpg')
+            .photo
+              img(src='../images/photo/17.jpg')
+            .photo
+              img(src='../images/photo/18.jpg')
+          .link-to-photoalbum
+            h3
+              | Не нашли себя?
+            div(class="button button-dark reg-button") Посмотреть все фото
+          .partners
+            div(class="partner-logo logo-1")
+              div(class='logo-part-one icon-logo-1')
+              div(class='logo-part-two icon-logo-2')
+            p
+              | ИП Преображенский Борис Александрович <br> Юр. Адрес: 123060, г. Москва, ул. Маршала Соколовского, д2. кв.23 <br> ИНН 773474333368 <br> АКБ "БНКВ" (ЗАО) в г. Москве
+
+    //- Google Analytics
+    | <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-51649845-1', 'praktikadays.ru');ga('send', 'pageview');</script>

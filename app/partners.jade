@@ -8,7 +8,10 @@ html
     meta(property="fb:admins", content="1695571811")
     meta(property="fb:app_id", content="{YOUR_APPLICATION_ID}")
     title Практика Days
-    | <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    //- fonts
+    | <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    | <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    //- styles
     | <link rel="stylesheet" href="/stylesheets/fontcustom.css">
     | <link rel="stylesheet" href="/stylesheets/style.css">
     //- libraries
@@ -31,20 +34,15 @@ html
   body
     | <div id="fb-root"></div>
     | <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
-    section#screen-one(class='block blue-block partners')
+    section#screen-one(class='block black-block second-page')
       .block-color
-        .svg-section
-          svg(height="600" width="270")
-            line(x1="270" y1="0" x2="0" y2="600")
-          svg(height="600" width="270")
-            line(x1="270" y1="0" x2="0" y2="600")
-          svg(height="6000" width="2700")
-            line(x1="2700" y1="0" x2="0" y2="6000")
         .block-inner
           header.header
             a(href='/' class='logo')
               div(class='logo-part-one icon-logo-1')
               div(class='logo-part-two icon-logo-2')
+            .registration-button
+              .button.reg-button Регистрация
             ul.social
               li
                 a(href="http://instagram.com/internetpraktika" target="_blank" class="inst icon-insta")
@@ -55,16 +53,19 @@ html
             nav
               ul
                 li
-                  a(href="/") Главная
-            .likes-button
-              .vk-like
-                | <div id="vk_like"></div>
-                | <script type="text/javascript">VK.Widgets.Like("vk_like", {type: "mini"});</script>
-              .fb-like
-                | <div class="fb-like" data-href="https://praktikadays.ru" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                  a(class="presenters-button") Выступающие
+                li
+                  a(class="map-button") Место проведения
+                li
+                  a(class="about-button") О Нас
+                li
+                  a(href="/partners.html") Партнеры
+                li
+                  a(href="#") Блог
+                li
+                  a(href="/reviews.html") Отзывы
 
-
-    section#screen-seven(class='block white-block about-screen partners-screen')
+    section#screen-eight(class='block white-block about-screen partners-screen')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")

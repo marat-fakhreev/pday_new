@@ -109,6 +109,8 @@
 
         &.active
           .line-two
+            position: relative
+
             .box
               background-color: $redLightColor
               clearfix()
@@ -117,6 +119,23 @@
               .button
                 background-color: #fff
                 color: $redLightColor
+
+            .day-text
+              font-family: inherit
+
+            &::before
+              content: ''
+              top: 100%
+              left: 50%
+              border: solid transparent
+              height: 0
+              width: 0
+              position: absolute
+              pointer-events: none
+              border-color: transparent
+              border-top-color: $redLightColor
+              border-width: 15px
+              margin-left: -15px
 
         .line-one
           height: 85px
@@ -135,6 +154,13 @@
             background-image: url("../images/partners/e-partner.png")
             width: 171px
             height: 28px
+
+          .likes-button
+            margin: 10px 0 0 0
+
+            div
+              margin: 0px
+              float: left
 
         .line-two
           .box
