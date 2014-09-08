@@ -5,14 +5,13 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=0.3')
-    meta(property="fb:admins", content="1695571811")
-    meta(property="fb:app_id", content="{YOUR_APPLICATION_ID}")
     title Практика Days
     //- fonts
     | <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     | <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     //- styles
     | <link rel="stylesheet" href="/stylesheets/fontcustom.css">
+    | <link rel="stylesheet" href="/stylesheets/font-awesome.css">
     | <link rel="stylesheet" href="/stylesheets/style.css">
     //- libraries
     | <script type='text/javascript' src='/scripts/libs/jquery-2.1.1.min.js'></script>
@@ -23,49 +22,48 @@ html
     | <script type='text/javascript' src='/scripts/libs/jquery.images-ready.js'></script>
     | <script type='text/javascript' src='/scripts/libs/jquery.easing.1.3.js'></script>
     | <script type='text/javascript' src='/scripts/libs/moment.min.js'></script>
-    //- additional scripts
-    | <script src="//vk.com/js/api/openapi.js" type="text/javascript" charset="windows-1251"></script>
-    | <script type="text/javascript">VK.init({apiId: 4373980, onlyWidgets: true});</script>
     //- app scripts
     | <script type='text/javascript' src='/scripts/app.js'></script>
     | <script type='text/javascript' src='/scripts/models/form.js'></script>
     | <script type='text/javascript' src='/scripts/views/main_view.js'></script>
 
   body
-    | <div id="fb-root"></div>
-    | <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+    header.header.transparent
+      .header-inner
+        a(href='/' class='logo')
+          div(class='logo-part-one icon-logo-1')
+          div(class='logo-part-two icon-logo-2')
+        .registration-button
+          .button.reg-button Регистрация
+        ul.social
+          li
+            a(href="http://instagram.com/internetpraktika" target="_blank" class="inst icon-insta")
+          li
+            a(href="https://vk.com/public71012625" target="_blank" class="vk icon-vk")
+          li
+            a(href="https://www.facebook.com/praktikadays?ref=hl" target="_blank" class="fb icon-fb")
+        nav
+          ul
+            li
+              a(href='/') Выступающие
+            li
+              a(href='/') Место проведения
+            li
+              a(href='/') О Нас
+            li
+              a(href='/partners.html') Партнеры
+            li
+              a(href='#') Блог
+            li
+              a(href='/reviews.html') Отзывы
+
+
     section#screen-one(class='block black-block second-page')
       .block-color
         .block-inner
-          header.header
-            a(href='/' class='logo')
-              div(class='logo-part-one icon-logo-1')
-              div(class='logo-part-two icon-logo-2')
-            .registration-button
-              .button.reg-button Регистрация
-            ul.social
-              li
-                a(href="http://instagram.com/internetpraktika" target="_blank" class="inst icon-insta")
-              li
-                a(href="https://vk.com/public71012625" target="_blank" class="vk icon-vk")
-              li
-                a(href="https://www.facebook.com/praktikadays?ref=hl" target="_blank" class="fb icon-fb")
-            nav
-              ul
-                li
-                  a(class="presenters-button") Выступающие
-                li
-                  a(class="map-button") Место проведения
-                li
-                  a(class="about-button") О Нас
-                li
-                  a(href="/partners.html") Партнеры
-                li
-                  a(href="#") Блог
-                li
-                  a(href="/reviews.html") Отзывы
 
-    section#screen-thirteen(class='block white-block')
+
+    section#reviews(class='block white-block')
       .svg-section
         svg(height="600" width="270")
           line(x1="270" y1="0" x2="0" y2="600")
@@ -75,9 +73,9 @@ html
           line(x1="270" y1="0" x2="0" y2="600")
       .block-inner
         h2
-          | Что говорят о прошлых <span class='white-selection'>мероприятиях</span>
+          | Что говорят о прошлых <span class='red-selection'>мероприятиях</span>
         .reviews
-          ul#review_list
+          ul
             li
               .review-item
                 .icon-quote-top
@@ -186,7 +184,8 @@ html
               .review-author
                 a(target="_blank" href="") Светлана П
 
-    section#screen-twelve(class='block black-block')
+
+    section#screen-twelve(class='block black-block photoalbum-second')
       .block-color
         .svg-section
           svg(height="600" width="270")
@@ -195,7 +194,7 @@ html
             line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
           h2
-            | Фотографии с прошлого <span class='red-selection'>Практика Days</span>
+            | Фотографии с прошлого <span class="white-selection">Практика Days</span>
         .album-container
           #photoalbum.photoalbum
             .photo
@@ -235,9 +234,9 @@ html
             .photo
               img(src='../images/photo/18.jpg')
           .link-to-photoalbum
-            h3
-              | Не нашли себя?
-            div(class="button button-dark reg-button") Посмотреть все фото
+            a(href="#" class="button button-light reg-button")
+              | Посмотреть все фото
+              | <i class="fa fa-arrow-right fa-red"></i>
           .partners
             div(class="partner-logo logo-1")
               div(class='logo-part-one icon-logo-1')

@@ -67,7 +67,7 @@ html
             input(type="tel" name="Телефон")
           input(type="submit" value="Отправить заявку")
 
-    header.header.header-filled
+    header.header.transparent
       .header-inner
         a(href='/' class='logo')
           div(class='logo-part-one icon-logo-1')
@@ -118,7 +118,7 @@ html
                         | <span class='day-text'></span> до начала мероприятия в Москве
                     .b-reg
                       .button Регистрация участников
-              li
+              li.inactive
                 .line-one
                   span Для справок
                   .tel +7 (495) 726-09-39
@@ -129,7 +129,7 @@ html
                       p Дня до начала мероприятия в СПб
                     .b-reg
                       .button Регистрация участников
-              li
+              li.inactive
                 .line-one
                   span Расскажи друзьям
                   .likes-button
@@ -603,7 +603,7 @@ html
         .link-to-photoalbum
           h3
             | Не нашли себя?
-          div(class="button button-dark reg-button")
+          a(href="#" class="button button-dark reg-button")
             | Посмотреть все фото
             | <i class="fa fa-arrow-right"></i>
 

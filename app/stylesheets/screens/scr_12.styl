@@ -6,6 +6,9 @@
   .fa
     margin: 0 0 0 5px
 
+  .fa-red
+    color: $redLightColor
+
   .link-to-photoalbum
     margin: 60px 0
     position: relative
@@ -13,6 +16,9 @@
 
     h3
       text-align: center
+
+    .button-light
+      margin-top: 15px
 
   .photoalbum
     height: 415px
@@ -33,10 +39,7 @@
         left: 0
         background-color: rgba($greyDarkColor, 0.9)
         box-sizing: border-box
-        padding: 140px
-
-        .fa
-          color: $redLightColor
+        padding: 140px 0
 
         p
           text-align: center
@@ -46,6 +49,10 @@
         .button
           color: #fff
           margin: 0 45px
+          width: 280px
+          left: 50%
+          position: relative
+          margin-left: -140px
 
           &:hover
             color: $greyDarkColor
@@ -71,3 +78,33 @@
     position: relative
     width: auto
     height: 100%
+
+  .partners
+    margin: 50px 0 0 0
+
+    &::after
+      content: ''
+      display: block
+      clear: both
+
+    .partner-logo
+      padding: 0 10px
+
+    .logo-1
+      @extend .header .logo
+      float: none
+      left: 50%
+      margin: 0 0 0 -80px
+
+      .logo-part-one
+        color: #fff
+
+      .logo-part-two
+        bottom: 0
+        right: 28px
+
+    p
+      text-align: center
+      font-size: 14px
+      position: relative
+      top: -40px

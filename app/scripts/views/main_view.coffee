@@ -16,8 +16,10 @@ class App.Views.MainView
 
   initUi: ->
     @ui =
+      wind: $(window)
       body: $('body, html')
       onlyBody: $('body')
+      header: $('.header')
       popupForm: $('.pop-up form')
       callForm: $('#call_form')
       partnerForm: $('#partner_form')
@@ -42,6 +44,7 @@ class App.Views.MainView
       img: $('.photo img')
 
   events: ->
+    @ui.wind.on 'scroll', @onScroll
     @ui.regButton.on 'click', (=> @moveToElement(@ui.regScreen, 0))
     @ui.aboutButton.on 'click', (=> @moveToElement(@ui.aboutScreen, 0))
     @ui.presentersButton.on 'click', (=> @moveToElement(@ui.presentersScreen, 0))
@@ -54,6 +57,12 @@ class App.Views.MainView
 
   moveToElement: (element, height) ->
     @ui.body.animate(scrollTop: @_getFromTop(element, height), MOVING_DURATION, 'easeInOutCirc')
+
+  onScroll: =>
+    if @ui.wind.scrollTop() < 80
+      @ui.header.addClass('transparent')
+    else
+      @ui.header.removeClass('transparent')
 
   showReviews: =>
     @ui.reviewShowButton.toggleClass('active')
@@ -138,27 +147,28 @@ class App.Views.MainView
             <p>
               Отмечайте себя и смотрите<br>комментарии ко всем фотографиям<br>в нашем альбоме в Facebook
             </p>
-            <div class=button>
+            <a href='' class=button>
               Посмотреть все фото
-              <i class="fa fa-arrow-right"></i>
-            </div>
+              <i class="fa fa-arrow-right fa-red"></i>
+            </a>
           </div>
         """
       )
 
-    @ui.photoBox = $('.p-box')
-
     @ui.photoalbum.imagesReady =>
       shift = 0
-      @ui.photoalbum.smoothTouchScroll()
 
-      @ui.photoBox.each ->
+      @ui.photoalbum.find('.p-box').each ->
         self = $(@)
         width = self.parent().find('img').width()
         self.css
           width: width
           left: shift
         shift += width
+
+      @ui.photoalbum.smoothTouchScroll()
+
+      @ui.photoalbum.find('.scrollableArea').width(shift)
 
   _detectBrowser: ->
     if $.browser.mozilla
