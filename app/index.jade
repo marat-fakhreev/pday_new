@@ -67,37 +67,39 @@ html
             input(type="tel" name="Телефон")
           input(type="submit" value="Отправить заявку")
 
+    header.header.header-filled
+      .header-inner
+        a(href='/' class='logo')
+          div(class='logo-part-one icon-logo-1')
+          div(class='logo-part-two icon-logo-2')
+        .registration-button
+          .button.reg-button Регистрация
+        ul.social
+          li
+            a(href="http://instagram.com/internetpraktika" target="_blank" class="inst icon-insta")
+          li
+            a(href="https://vk.com/public71012625" target="_blank" class="vk icon-vk")
+          li
+            a(href="https://www.facebook.com/praktikadays?ref=hl" target="_blank" class="fb icon-fb")
+        nav
+          ul
+            li
+              a(class="presenters-button") Выступающие
+            li
+              a(class="map-button") Место проведения
+            li
+              a(class="about-button") О Нас
+            li
+              a(href="/partners.html") Партнеры
+            li
+              a(href="#") Блог
+            li
+              a(href="/reviews.html") Отзывы
+
 
     section#screen-one(class='block black-block')
       .block-color
         .block-inner
-          header.header
-            a(href='/' class='logo')
-              div(class='logo-part-one icon-logo-1')
-              div(class='logo-part-two icon-logo-2')
-            .registration-button
-              .button.reg-button Регистрация
-            ul.social
-              li
-                a(href="http://instagram.com/internetpraktika" target="_blank" class="inst icon-insta")
-              li
-                a(href="https://vk.com/public71012625" target="_blank" class="vk icon-vk")
-              li
-                a(href="https://www.facebook.com/praktikadays?ref=hl" target="_blank" class="fb icon-fb")
-            nav
-              ul
-                li
-                  a(class="presenters-button") Выступающие
-                li
-                  a(class="map-button") Место проведения
-                li
-                  a(class="about-button") О Нас
-                li
-                  a(href="/partners.html") Партнеры
-                li
-                  a(href="#") Блог
-                li
-                  a(href="/reviews.html") Отзывы
           .container
             h2
               | Главное практическое<br><span class='white-selection'>мероприятие</span><br>по интернет-торговле

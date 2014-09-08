@@ -1,0 +1,72 @@
+.header
+  border-top: 2px solid $redLightColor
+  height: 80px
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 1000
+  color: #fff
+
+  .header-inner
+    height: 100%
+    width: 1024px
+    margin: 0 auto
+
+  .logo
+    position: relative
+    width: 140px
+    height: 100%
+    top: -24px
+    line-height: 85px
+    float: left
+
+    .logo-part-one
+    .logo-part-two
+      color: #fff
+      font-size: 50px
+
+    .logo-part-two
+      position: absolute
+      right: 19px
+      top: 0px
+      color: $redLightColor
+
+  nav
+    height: 100%
+    float: right
+
+    li
+      line-height: 82px
+      float: left
+      margin: 0 12px 0 12px
+
+      a
+        font-size: 17px
+        font-family: $fontTwo
+
+        &:hover
+          text-decoration: underline
+
+  .social
+    margin: 0
+    height: 100%
+    float: right
+
+    li
+      line-height: 80px
+      float: left
+      width: 16px
+      margin: 0 0 0 13px
+
+  .registration-button
+    float: right
+    margin: 23px 0
+
+    .button
+      font-family: $fontTwo
+      margin: 0 0 0 20px
+
+.header-filled
+  background-color: $greyDarkColor

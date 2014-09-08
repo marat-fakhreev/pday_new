@@ -42,7 +42,7 @@ class App.Views.MainView
       img: $('.photo img')
 
   events: ->
-    @ui.regButton.on 'click', (=> @moveToElement(@ui.regScreen, 150))
+    @ui.regButton.on 'click', (=> @moveToElement(@ui.regScreen, 0))
     @ui.aboutButton.on 'click', (=> @moveToElement(@ui.aboutScreen, 0))
     @ui.presentersButton.on 'click', (=> @moveToElement(@ui.presentersScreen, 0))
     @ui.scrollButton.on 'click', (=> @moveToElement(@ui.scrollScreen, 0))
