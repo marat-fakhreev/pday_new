@@ -117,7 +117,7 @@ html
                       p
                         | <span class='day-text'></span> до начала мероприятия в Москве
                     .b-reg
-                      .button Регистрация участников
+                      .button.reg-button Регистрация участников
               li.inactive
                 .line-one
                   span Для справок
@@ -128,7 +128,7 @@ html
                       h2.day __
                       p Дня до начала мероприятия в СПб
                     .b-reg
-                      .button Регистрация участников
+                      .button.reg-button Регистрация участников
               li.inactive
                 .line-one
                   span Расскажи друзьям
@@ -144,19 +144,24 @@ html
                       h2.day __
                       p Дня до начала мероприятия в Казани
                     .b-reg
-                      .button Регистрация участников
+                      .button.reg-button Регистрация участников
 
 
     section#screen-two(class='block black-block scroll-screen')
-      .block-color
+      .block-color.dark-block-color
         .svg-section
           svg(height="600" width="270")
             line(x1="270" y1="0" x2="0" y2="600")
           svg(height="600" width="270")
             line(x1="270" y1="0" x2="0" y2="600")
         .block-inner
-          h3
-            | В то время, как многие ходили по различным конференциям, слушали рассказы теоретиков и супер-звезд российского e-commerce, эти 15 предпринимателей работали над своими проектами. 
+          .comment
+            .column-pic
+              .person
+            .column-text
+              p
+                | В то время, как многие ходили по различным конференциям, слушали рассказы теоретиков и супер-звезд российского e-commerce, эти 15 предпринимателей работали над своими проектами. 
+              span.red-selection Борис Преображенский
 
 
     section#screen-three(class='block white-block')
@@ -757,7 +762,7 @@ html
 
 
     section#screen-twenty(class='block black-block')
-      .block-color
+      .block-color.dark-block-color
         .svg-section
           svg(height="600" width="270")
             line(x1="270" y1="0" x2="0" y2="600")
