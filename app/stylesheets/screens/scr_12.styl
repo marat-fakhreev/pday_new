@@ -26,40 +26,31 @@
     background-color: $greyDarkColor
     position: relative
 
-    .photo
-      position: relative
+    .p-box
+      z-index: 100
+      height: 415px
+      position: absolute
+      top: 0
+      right: 0
+      background-color: rgba($greyDarkColor, 0.9)
+      box-sizing: border-box
+      padding: 140px 0
 
-      .p-box
-        opacity: 0
-        transition: all 0.2s ease
-        z-index: 100
-        height: 415px
-        position: absolute
-        top: 0
-        left: 0
-        background-color: rgba($greyDarkColor, 0.9)
-        box-sizing: border-box
-        padding: 140px 0
+      p
+        text-align: center
+        color: #fff
+        margin: 0 0 20px 0
 
-        p
-          text-align: center
-          color: #fff
-          margin: 0 0 20px 0
-
-        .button
-          color: #fff
-          margin: 0 45px
-          width: 280px
-          left: 50%
-          position: relative
-          margin-left: -140px
-
-          &:hover
-            color: $greyDarkColor
+      .button
+        color: #fff
+        margin: 0 45px
+        width: 280px
+        left: 50%
+        position: relative
+        margin-left: -140px
 
         &:hover
-          opacity: 1
-          transition: all 0.2s ease
+          color: $greyDarkColor
 
     img
       height: 100%

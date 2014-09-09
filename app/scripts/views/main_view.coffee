@@ -9,7 +9,6 @@ class App.Views.MainView
   constructor: ->
     @initUi()
     @events()
-    @_initReviewList()
     @_setDate()
     @_detectBrowser()
     @_initPhotoalbum()
@@ -40,8 +39,8 @@ class App.Views.MainView
       reviewListItem: $('#review_list li')
       daysCount: $('.days-count')
       photoalbum: $('#photoalbum')
-      photo: $('.photo')
-      img: $('.photo img')
+      pBox: $('.p-box')
+      photo: $('#photoalbum img')
 
   events: ->
     @ui.wind.on 'scroll', @onScroll
@@ -129,50 +128,16 @@ class App.Views.MainView
     @ui.daysCount.find('.day').html(daysCount)
     @ui.daysCount.find('.day-text').html(text)
 
-  _initReviewList: ->
-    itter = 1
-
-    @ui.reviewListItem.each ->
-      HEIGHT += $(@).height() + MARGIN_BOTTOM
-      SHORT_HEIGHT = HEIGHT if itter is LIST_LENGTH
-      itter++
-
-    @ui.reviewList.height(SHORT_HEIGHT)
-
   _initPhotoalbum: ->
-    @ui.photo.each ->
-      $(@).prepend(
-        """
-          <div class=p-box>
-            <p>
-              Отмечайте себя и смотрите<br>комментарии ко всем фотографиям<br>в нашем альбоме в Facebook
-            </p>
-            <a href='' class=button>
-              Посмотреть все фото
-              <i class="fa fa-arrow-right fa-red"></i>
-            </a>
-          </div>
-        """
-      )
-
     @ui.photoalbum.imagesReady =>
-      shift = 0
-
-      @ui.photoalbum.find('.p-box').each ->
-        self = $(@)
-        width = self.parent().find('img').width()
-        self.css
-          width: width
-          left: shift
-        shift += width
-
+      width = @ui.photo.eq(-1).width()
+      @ui.pBox.width(width)
       @ui.photoalbum.smoothTouchScroll()
-
-      @ui.photoalbum.find('.scrollableArea').width(shift)
+      area = @ui.photoalbum.find('.scrollableArea')
+      area.width(area.width() - width)
 
   _detectBrowser: ->
-    if $.browser.mozilla
-      @ui.onlyBody.addClass('mozilla') if @_osDetection() isnt 'MacOS'
+    @ui.onlyBody.addClass('mozilla') if @_osDetection() is 'Windows'
 
   _osDetection: ->
     OSName = undefined
