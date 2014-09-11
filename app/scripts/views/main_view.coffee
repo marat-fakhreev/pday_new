@@ -4,7 +4,7 @@ class App.Views.MainView
   HEIGHT = 0
   SHORT_HEIGHT = 0
   MARGIN_BOTTOM = 40
-  DATE = [2014, 10, 4]
+  DATE = '2014-10-04'
 
   constructor: ->
     @initUi()
@@ -110,8 +110,8 @@ class App.Views.MainView
 
   _setDate: ->
     targetDate = moment(DATE)
-    today = moment().format()
-    daysCount = targetDate.diff(today, 'days')
+    today = moment()
+    daysCount = targetDate.diff(today, 'days') + 1
     lastChar = daysCount.toString().slice(-1)
 
     if daysCount <= 0
