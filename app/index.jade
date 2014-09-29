@@ -1,37 +1,6 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=0.3')
-    meta(property="fb:admins", content="1695571811")
-    meta(property="fb:app_id", content="{YOUR_APPLICATION_ID}")
-    title Практика Days
-    //- fonts
-    | <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-    | <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-    //- styles
-    | <link rel="stylesheet" href="/stylesheets/fontcustom.css">
-    | <link rel="stylesheet" href="/stylesheets/font-awesome.css">
-    | <link rel="stylesheet" href="/stylesheets/style.css">
-    //- libraries
-    | <script type='text/javascript' src='/scripts/libs/jquery-2.1.1.min.js'></script>
-    | <script type='text/javascript' src='/scripts/libs/jquery.browser.min.js'></script>
-    | <script type='text/javascript' src='/scripts/libs/jquery-ui-1.10.3.custom.min.js'></script>
-    | <script type='text/javascript' src='/scripts/libs/jquery.kinetic.min.js'></script>
-    | <script type='text/javascript' src='/scripts/libs/jquery.smoothTouchScroll.min.js'></script>
-    | <script type='text/javascript' src='/scripts/libs/jquery.images-ready.js'></script>
-    | <script type='text/javascript' src='/scripts/libs/jquery.easing.1.3.js'></script>
-    | <script type='text/javascript' src='/scripts/libs/moment.min.js'></script>
-    //- additional scripts
-    | <script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>
-    | <script type="text/javascript">VK.init({apiId: 4373980, onlyWidgets: true});</script>
-    //- app scripts
-    | <script type='text/javascript' src='/scripts/app.js'></script>
-    | <script type='text/javascript' src='/scripts/models/form.js'></script>
-    | <script type='text/javascript' src='/scripts/views/main_view.js'></script>
+extends templates/layout
 
+block content
   body
     | <div id="fb-root"></div>
     | <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
@@ -106,11 +75,29 @@ html
               | <span class='white-selection'>ПрактикаDays.</span><br>Главное практическое<br><span class='white-selection'>мероприятие</span><br>по интернет-торговле
             p
               | 4 октября 2014 года уже в третий раз пройдет ПрактикаDays, культовое мероприятие, на котором каждый раз новые 15 владельцев интернет-магазинов рассказывают о том, как они создавали и развивали свои интернет-магазины, о своих успехах и провалах, делятся практическим опытом, секретами и фишками онлайн-торговли.
-            ul
+            .top-list
+              .line-one
+                span В рамках
+                a(class='partner' href='http://www.eretailforum.ru' target='_blank')
+              .line-one
+                span Генеральный партнер
+                a(class='general-partner' href='http://www.iml.ru' target='_blank')
+                  .logo
+                  .title Логистика Интернет-магазинов
+                  .link.red-selection http://iml.ru
+              .line-one
+                span Для справок
+                .tel +7 (495) 726-09-39
+              .line-one
+                span Расскажи друзьям
+                .likes-button
+                  .vk-like
+                    | <div id="vk_like"></div>
+                    | <script type="text/javascript">VK.Widgets.Like("vk_like", {type: "mini"});</script>
+                  .fb-like
+                    | <div class="fb-like" data-href="https://praktikadays.ru" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+            ul.bottom-list
               li.active.days-count
-                .line-one
-                  span В рамках
-                  a(class='partner' href='http://www.eretailforum.ru' target='_blank')
                 .line-two
                   .box
                     .b-title
@@ -120,9 +107,6 @@ html
                     .b-reg
                       .button.reg-button Регистрация участников
               li.inactive
-                .line-one
-                  span Для справок
-                  .tel +7 (495) 726-09-39
                 .line-two
                   .box
                     .b-title
@@ -131,14 +115,6 @@ html
                     .b-reg
                       .button.reg-button Регистрация участников
               li.inactive
-                .line-one
-                  span Расскажи друзьям
-                  .likes-button
-                    .vk-like
-                      | <div id="vk_like"></div>
-                      | <script type="text/javascript">VK.Widgets.Like("vk_like", {type: "mini"});</script>
-                    .fb-like
-                      | <div class="fb-like" data-href="https://praktikadays.ru" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
                 .line-two
                   .box
                     .b-title
